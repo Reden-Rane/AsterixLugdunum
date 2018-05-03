@@ -15,12 +15,18 @@ public class TextureManager {
 
     private final List<TextureAtlas> loadedAtlases = new ArrayList<>();
 
+    //Entities Atlases
     public final TextureAtlas asterixAtlas;
+    public final TextureAtlas boatAtlas;
+
+    //GUI Atlases
     public final TextureAtlas introAtlas;
     public final TextureAtlas bdAtlas;
+    public final TextureAtlas guiAtlas;
+
+    //Terrain Atlases
     public final TextureAtlas hubMapAtlas;
     public final TextureAtlas tileAtlas;
-    public final TextureAtlas guiAtlas;
     private Texture boundTexture;
 
     public TextureManager() throws IOException, TextureLoadingException {
@@ -28,11 +34,12 @@ public class TextureManager {
         gsonBuilder.registerTypeAdapter(TextureAtlas.class, new TextureAtlasDeserializer());
         this.gson = gsonBuilder.create();
         this.asterixAtlas = loadAtlas(new TextureResource("entity/asterix_atlas.json"));
+        this.boatAtlas = loadAtlas(new TextureResource("entity/boat_atlas.json"));
         this.introAtlas = loadAtlas(new TextureResource("gui/intro_atlas.json"));
         this.bdAtlas = loadAtlas(new TextureResource("gui/bd_atlas.json"));
+        this.guiAtlas = loadAtlas(new TextureResource("gui/gui_atlas.json"));
         this.hubMapAtlas = loadAtlas(new TextureResource("terrain/hub_map.json"));
         this.tileAtlas = loadAtlas(new TextureResource("terrain/tile_atlas.json"));
-        this.guiAtlas = loadAtlas(new TextureResource("gui/gui_atlas.json"));
     }
 
     public TextureAtlas loadAtlas(TextureResource textureResource) throws TextureLoadingException, IOException {

@@ -93,7 +93,7 @@ public class AsterixAndObelixGame implements Runnable {
         }
 
         try {
-            this.display = new Display(GAME_TITLE, 1280, 720);
+            this.display = new Display(GAME_TITLE, 1920, 1080);
         } catch (GameException e) {
             e.printStackTrace();
         }

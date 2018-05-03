@@ -1,0 +1,17 @@
+{
+  "name": "boat_atlas",
+  "texture_path": "entity/boat_atlas.png",
+  //GL_NEAREST
+  "min_filter": 9728,
+  //GL_NEAREST
+  "mag_filter": 9728,
+  "sprites": [
+    {
+      "name": "boat_0",
+      "x": 0,
+      "y": 0,
+      "width": 240,
+      "height": 195
+    }
+  ]
+}

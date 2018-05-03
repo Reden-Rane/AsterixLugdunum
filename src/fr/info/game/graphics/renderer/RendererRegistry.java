@@ -1,9 +1,11 @@
 package fr.info.game.graphics.renderer;
 
 import fr.info.game.graphics.RenderManager;
+import fr.info.game.graphics.renderer.entity.BoatRenderer;
 import fr.info.game.graphics.renderer.entity.PlayerRenderer;
 import fr.info.game.graphics.renderer.level.*;
 import fr.info.game.graphics.renderer.level.introduction.*;
+import fr.info.game.logic.entity.Boat;
 import fr.info.game.logic.entity.Player;
 import fr.info.game.logic.level.bridge.BridgeLevel;
 import fr.info.game.logic.level.campus.CampusLevel;
@@ -38,6 +40,8 @@ public class RendererRegistry {
         renderersRegistry.put(BridgeLevel.class, new BridgeRenderer(renderManager));
         renderersRegistry.put(GatesLevel.class, new GatesRenderer(renderManager));
         renderersRegistry.put(CampusLevel.class, new CampusRenderer(renderManager));
+
+        renderersRegistry.put(Boat.class, new BoatRenderer(renderManager));
     }
 
     public <T> Renderer<T> getRenderer(T obj) {
