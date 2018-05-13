@@ -13,6 +13,8 @@ import org.joml.Matrix4f;
 
 import java.io.IOException;
 
+import static fr.info.game.AsterixAndObelixGame.RESOLUTION_X;
+import static fr.info.game.AsterixAndObelixGame.RESOLUTION_Y;
 import static org.lwjgl.opengl.GL11.*;
 
 public class RenderManager {
@@ -40,14 +42,14 @@ public class RenderManager {
         RenderMatrices.updateMatrix(RenderMatrices.getModelMatrix(), new Matrix4f());
         this.shaderManager.updateViewMatrixUniform();
         RenderMatrices.setMatrixMode(RenderMatrices.EnumMatrixMode.MODEL);
-        LevelRenderer levelRenderer = (LevelRenderer) this.rendererRegistry.getRenderer(level);
+        LevelRenderer<Level> levelRenderer = (LevelRenderer<Level>) this.rendererRegistry.getRenderer(level);
         if (levelRenderer != null) {
             levelRenderer.render(level, partialTicks);
         }
     }
 
     public void updateProjectionMatrix() {
-        RenderMatrices.updateMatrix(RenderMatrices.getProjectionMatrix(), new Matrix4f().ortho(0, 1920, 0, 1080, -1, 3000));
+        RenderMatrices.updateMatrix(RenderMatrices.getProjectionMatrix(), new Matrix4f().ortho(0, RESOLUTION_X, 0, RESOLUTION_Y, -1, 3000));
         this.shaderManager.updateProjectionMatrixUniform();
     }
 

@@ -48,4 +48,9 @@ public class IntroductionGameTitleRenderer extends Renderer<IntroductionGameTitl
         RenderUtils.renderString(subTitle, renderManager.COMIC_STRIP_MN_FONT, subTitleX, subTitleY, 64, new Vector4f(1, 1, 1, alpha));
         renderManager.shaderManager.spriteShader.unbind();
     }
+
+    @Override
+    public boolean shouldRender(IntroductionGameTitle obj, float partialTicks) {
+        return true;
+    }
 }

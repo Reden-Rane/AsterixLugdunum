@@ -35,9 +35,6 @@ public class HubLevel extends Level {
     public HubLevel() {
         super("Hub");
         getCamera().setZoom(3);
-        player.setX(95);
-        player.setY(48);
-        spawnEntity(player);
 
         hubPath.appendNode(this.tavernMarker = new HubLevelMarkerNode(new TavernLevel(), 95, 48));
         hubPath.appendNode(new PathNode(160, 75));
@@ -53,6 +50,11 @@ public class HubLevel extends Level {
         hubPath.appendNode(this.campusMarker = new HubLevelMarkerNode(new CampusLevel(), 405, 250));
 
         this.currentNode = this.tavernMarker;
+
+        player.setX(this.tavernMarker.x);
+        player.setY(this.tavernMarker.y);
+        spawnEntity(player);
+
     }
 
     @Override
@@ -93,6 +95,8 @@ public class HubLevel extends Level {
                 }
             } else if (KeyboardCallback.isKeyDown(GLFW_KEY_ENTER)) {
                 enterLevel(getCurrentNode().level);
+            } else if(KeyboardCallback.isKeyDown(GLFW_KEY_B)) {//TODO Remove this
+                enterLevel(bridgeMarker.level);
             }
         }
 
@@ -114,6 +118,7 @@ public class HubLevel extends Level {
                 if(getTicks() == 0) {
                     closeLevel(20);
                 } else if (getTicks() == getDuration()) {
+                    level.resetLevel();
                     AsterixAndObelixGame.INSTANCE.setCurrentLevel(level);
                     level.openLevel(20, true);
                 }

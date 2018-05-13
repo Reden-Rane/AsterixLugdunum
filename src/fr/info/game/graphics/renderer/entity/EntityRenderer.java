@@ -5,6 +5,7 @@ import fr.info.game.graphics.RenderManager;
 import fr.info.game.graphics.RenderUtils;
 import fr.info.game.graphics.renderer.Renderer;
 import fr.info.game.graphics.texture.TextureSprite;
+import fr.info.game.logic.entity.particle.SplashParticle;
 import fr.info.game.logic.math.MathUtils;
 
 public abstract class EntityRenderer<E extends Entity> extends Renderer<E> {
@@ -25,5 +26,10 @@ public abstract class EntityRenderer<E extends Entity> extends Renderer<E> {
     }
 
     public abstract TextureSprite getEntityTexture(E entity);
+
+    @Override
+    public boolean shouldRender(Entity obj, float partialTicks) {
+        return true;//TODO
+    }
 
 }

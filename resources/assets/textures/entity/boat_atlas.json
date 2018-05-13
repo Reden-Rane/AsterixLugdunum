@@ -7,11 +7,18 @@
   "mag_filter": 9728,
   "sprites": [
     {
-      "name": "boat_0",
+      "name": "boat",
       "x": 0,
       "y": 0,
       "width": 240,
       "height": 195
+    },
+    {
+      "name": "paddle",
+      "x": 266,
+      "y": 11,
+      "width": 27,
+      "height": 26
     }
   ]
 }

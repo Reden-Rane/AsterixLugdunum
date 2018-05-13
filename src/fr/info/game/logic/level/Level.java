@@ -5,8 +5,10 @@ import fr.info.game.audio.Sound;
 import fr.info.game.audio.SoundSource;
 import fr.info.game.logic.entity.Entity;
 import fr.info.game.logic.math.interpolation.LinearInterpolation;
+import fr.info.game.logic.tile.Tile;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public abstract class Level {
@@ -37,8 +39,14 @@ public abstract class Level {
             this.cartoonCircleRadius = this.cartoonCircleAnimation.getValue();
         }
 
-        for (Entity entity : getLoadedEntities()) {
-            entity.update();
+        Iterator<Entity> iterator = getLoadedEntities().iterator();
+        while (iterator.hasNext()) {
+            Entity entity = iterator.next();
+            if(entity.isDead()) {
+                iterator.remove();
+            } else {
+                entity.update();
+            }
         }
 
         camera.update();
@@ -72,6 +80,8 @@ public abstract class Level {
         }
     }
 
+    public void keyEvent(int key, int action) {}
+
     public float getCartoonCircleRadius() {
         return cartoonCircleRadius;
     }
@@ -95,4 +105,10 @@ public abstract class Level {
     public long getLevelTicks() {
         return levelTicks;
     }
+
+    public Tile[][] getTerrain() {
+        return null;
+    }
+
+    public void resetLevel() {}
 }

@@ -12,4 +12,6 @@ public abstract class Renderer<T> {
 
 	public abstract void render(T obj, float partialTicks);
 
+	public abstract boolean shouldRender(T obj, float partialTicks);
+
 }

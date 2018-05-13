@@ -71,7 +71,7 @@ public class RenderUtils {
         renderManager.shaderManager.cartoonOpeningShader.bind();
         renderManager.shaderManager.cartoonOpeningShader.setUniformMat4f("projectionMatrix", new Matrix4f().ortho(0, renderManager.getDisplayWidth(), 0, renderManager.getDisplayHeight(), -1, 3000));
         renderManager.shaderManager.cartoonOpeningShader.setUniform2f("circleCenter", renderManager.getDisplayWidth() / 2, renderManager.getDisplayHeight() / 2);
-        renderManager.shaderManager.cartoonOpeningShader.setUniform1f("circleRadius", renderManager.getDisplayHeight() * 2 * progress);
+        renderManager.shaderManager.cartoonOpeningShader.setUniform1f("circleRadius", Math.max(renderManager.getDisplayWidth(), renderManager.getDisplayHeight()) * 2 * progress);
         RenderUtils.renderRectangle(0, 0, 0, renderManager.getDisplayWidth(), renderManager.getDisplayHeight(), new Vector4f(0, 0, 0, 1));
         renderManager.shaderManager.cartoonOpeningShader.unbind();
     }

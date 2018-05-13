@@ -8,6 +8,7 @@ import fr.info.game.logic.input.KeyboardCallback;
 import fr.info.game.logic.input.MouseButtonCallback;
 import fr.info.game.logic.input.MousePositionCallback;
 import fr.info.game.logic.level.Level;
+import fr.info.game.logic.level.bridge.BridgeLevel;
 import fr.info.game.logic.level.hub.HubLevel;
 import fr.info.game.logic.level.introduction.IntroductionLevel;
 
@@ -25,6 +26,9 @@ import static org.lwjgl.opengl.GL11.*;
  * and initialize the libraries required (GLFW, OpenGL, OpenAL).
  */
 public class AsterixAndObelixGame implements Runnable {
+
+    public static final int RESOLUTION_X = 1920;
+    public static final int RESOLUTION_Y = 1080;
 
     public static AsterixAndObelixGame INSTANCE;
 
@@ -93,7 +97,7 @@ public class AsterixAndObelixGame implements Runnable {
         }
 
         try {
-            this.display = new Display(GAME_TITLE, 1920, 1080);
+            this.display = new Display(GAME_TITLE, RESOLUTION_X, RESOLUTION_Y);
         } catch (GameException e) {
             e.printStackTrace();
         }
@@ -131,7 +135,7 @@ public class AsterixAndObelixGame implements Runnable {
      */
     private void runGameLoop() {
 
-        //Start the game with the introduction level
+        //Start the game with the introduction levelClass
         setCurrentLevel(new IntroductionLevel());
         this.hubLevel = new HubLevel();
 
@@ -210,7 +214,7 @@ public class AsterixAndObelixGame implements Runnable {
     private void render(float partialTicks) {
 
         if (this.currentLevel != null) {
-            //Render the level
+            //Render the levelClass
             this.renderManager.render(currentLevel, partialTicks);
         }
 

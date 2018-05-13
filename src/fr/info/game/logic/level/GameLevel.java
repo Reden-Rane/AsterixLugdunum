@@ -3,14 +3,20 @@ package fr.info.game.logic.level;
 import fr.info.game.AsterixAndObelixGame;
 import fr.info.game.ScheduledTask;
 import fr.info.game.logic.input.KeyboardCallback;
+import fr.info.game.logic.tile.Tile;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE;
 
-public class GameLevel extends Level {
+public abstract class GameLevel extends Level {
+
+    private final Tile[][] tiles;
 
     public GameLevel(String levelName) {
         super(levelName);
+        this.tiles = generateTerrain();
     }
+
+    public abstract Tile[][] generateTerrain();
 
     @Override
     public void update() {
@@ -32,5 +38,9 @@ public class GameLevel extends Level {
         }
 
         super.update();
+    }
+
+    public Tile[][] getTerrain() {
+        return tiles;
     }
 }

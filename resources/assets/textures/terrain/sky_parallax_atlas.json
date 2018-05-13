@@ -1,0 +1,59 @@
+{
+  "name": "sky_parallax_atlas",
+  "texture_path": "terrain/sky_parallax_atlas.png",
+  "min_filter": 9728,
+  //NEAREST
+  "mag_filter": 9728,
+  //NEAREST
+  "sprites": [
+    {
+      "name": "cloud",
+      "x": 0,
+      "y": 0,
+      "width": 89,
+      "height": 31
+    },
+    {
+      "name": "mountains0",
+      "x": 0,
+      "y": 31,
+      "width": 384,
+      "height": 163
+    },
+    {
+      "name": "mountains1",
+      "x": 384,
+      "y": 31,
+      "width": 384,
+      "height": 163
+    },
+    {
+      "name": "clouds0",
+      "x": 0,
+      "y": 195,
+      "width": 384,
+      "height": 169
+    },
+    {
+      "name": "clouds1",
+      "x": 384,
+      "y": 195,
+      "width": 384,
+      "height": 169
+    },
+    {
+      "name": "clouds2",
+      "x": 384,
+      "y": 364,
+      "width": 384,
+      "height": 61
+    },
+    {
+      "name": "clouds3",
+      "x": 384,
+      "y": 364,
+      "width": 384,
+      "height": 61
+    }
+  ]
+}

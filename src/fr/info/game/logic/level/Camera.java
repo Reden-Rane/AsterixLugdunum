@@ -7,7 +7,7 @@ public class Camera {
     private float zoom;
     private float prevOffsetX;
     private float prevOffsetY;
-    private float prevOffsetZ;
+    private float prevZoom;
 
     public Camera() {
         this(0, 0, 1);
@@ -19,13 +19,13 @@ public class Camera {
         this.zoom = zoom;
         this.prevOffsetX = offsetX;
         this.prevOffsetY = offsetY;
-        this.prevOffsetZ = zoom;
+        this.prevZoom = zoom;
     }
 
     public void update() {
         this.prevOffsetX = offsetX;
         this.prevOffsetY = offsetY;
-        this.prevOffsetZ = zoom;
+        this.prevZoom = zoom;
     }
 
     public float getOffsetX() {
@@ -60,7 +60,7 @@ public class Camera {
         return prevOffsetY;
     }
 
-    public float getPrevOffsetZ() {
-        return prevOffsetZ;
+    public float getPrevZoom() {
+        return prevZoom;
     }
 }

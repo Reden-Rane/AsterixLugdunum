@@ -106,7 +106,7 @@ public class TextureAtlasDeserializer implements JsonDeserializer<TextureAtlas> 
             JsonArray framePeriodsArray = animationObj.getAsJsonArray("periods");
 
             if (framePeriodsArray.size() != frames.length) {
-                throw new TextureLoadingException("The number of periods must be equal to the number of frames.");
+                throw new TextureLoadingException("The number of periods must equal the number of frames.");
             }
 
             double[] periods = new double[framePeriodsArray.size()];

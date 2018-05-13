@@ -19,6 +19,20 @@
       "y": 376,
       "width": 337,
       "height": 114
+    },
+    {
+      "name": "keyButton",
+      "x": 290,
+      "y": 0,
+      "width": 45,
+      "height": 48
+    },
+    {
+      "name": "keyButtonPressed",
+      "x": 290,
+      "y": 48,
+      "width": 45,
+      "height": 48
     }
   ]
 }

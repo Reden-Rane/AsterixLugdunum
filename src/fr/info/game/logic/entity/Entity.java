@@ -1,6 +1,10 @@
 package fr.info.game.logic.entity;
 
+import fr.info.game.logic.AxisAlignedBoundingBox;
+
 public abstract class Entity {
+
+    private final AxisAlignedBoundingBox defaultAABB;
 
     private long existingTicks;
     private float prevX;
@@ -15,19 +19,21 @@ public abstract class Entity {
     private int width;
     private int height;
 
+    private boolean isDead;
+
     public Entity() {
         this(0, 0);
     }
 
-    public Entity(int x, int y) {
+    public Entity(float x, float y) {
         this(x, y, 1, 1);
     }
 
-    public Entity(int x, int y, int width, int height) {
+    public Entity(float x, float y, int width, int height) {
         this(x, y, 0, width, height);
     }
 
-    public Entity(int x, int y, int z, int width, int height) {
+    public Entity(float x, float y, float z, int width, int height) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -36,6 +42,7 @@ public abstract class Entity {
         this.prevZ = z;
         this.width = width;
         this.height = height;
+        this.defaultAABB = new AxisAlignedBoundingBox(0, 0, width, height);
     }
 
     public void update() {
@@ -45,6 +52,18 @@ public abstract class Entity {
         this.setX(getX() + getMotionX());
         this.setY(getY() + getMotionY());
         this.existingTicks++;
+    }
+
+    public boolean collidesWith(Entity entity) {
+        boolean flag1 = entity.getX() + entity.getCollisionBox().x < this.getX() + this.getCollisionBox().x + this.getCollisionBox().width;
+        boolean flag2 = entity.getX() + entity.getCollisionBox().x + entity.getCollisionBox().width > this.getX() + this.getCollisionBox().x;
+        boolean flag3 = entity.getY() + entity.getCollisionBox().y < this.getY() + this.getCollisionBox().y + this.getCollisionBox().height;
+        boolean flag4 = entity.getY() + entity.getCollisionBox().y + entity.getCollisionBox().height > this.getY() + this.getCollisionBox().y;
+        return flag1 && flag2 && flag3 && flag4;
+    }
+
+    public AxisAlignedBoundingBox getCollisionBox() {
+        return defaultAABB;
     }
 
     public long getExistingTicks() {
@@ -62,6 +81,14 @@ public abstract class Entity {
     public void moveTo(float x, float y) {
         moveToX(x);
         moveToY(y);
+    }
+
+    public boolean isDead() {
+        return isDead;
+    }
+
+    public void setDead() {
+        isDead = true;
     }
 
     public float getMotionX() {
