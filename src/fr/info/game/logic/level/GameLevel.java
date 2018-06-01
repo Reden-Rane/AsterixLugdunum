@@ -20,7 +20,13 @@ public abstract class GameLevel extends Level {
 
     @Override
     public void update() {
+        updateTiles(this.tiles);
+        super.update();
+    }
 
+    @Override
+    public void keyEvent(int key, int action) {
+        // en appuyant sur echap à partir d'un niveau, on retourne sur le hub
         if (KeyboardCallback.isKeyDown(GLFW_KEY_ESCAPE)) {
             AsterixAndObelixGame.INSTANCE.addScheduledTask(new ScheduledTask(0, 15) {
                 @Override
@@ -35,11 +41,9 @@ public abstract class GameLevel extends Level {
                     AsterixAndObelixGame.INSTANCE.enterHub();
                 }
             });
+        } else {
+            super.keyEvent(key, action);
         }
-
-        updateTiles(this.tiles);
-
-        super.update();
     }
 
     public void updateTiles(Tile[][] tiles) {

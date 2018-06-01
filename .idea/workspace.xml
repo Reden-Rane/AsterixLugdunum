@@ -2,127 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5868330-f7e7-45a4-8ac3-61ac515e3a5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Charles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/maps/pacman_floor0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/maps/pacman_items0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/maps/pacman_walls0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/sounds/water_rowing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/textures/fx/transition_atlas.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/assets/MapResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/ItemRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/particle/OrbParticleRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/EntityItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/PacmanEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/PacmanPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/pacman/PacmanEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/OrbParticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/item/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/item/ItemRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/item/MetadataItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/path/AStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/path/NodeAStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/tile/MetadataTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/tile/TeleporterTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/info/game/logic/tile/TileRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/shaders/cartoon_opening.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/shaders/cartoon_opening.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/font/comic_strip_mn_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/font/comic_strip_mn_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/font/obelix_pro_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/font/obelix_pro_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/font/obelix_pro_atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/font/obelix_pro_atlas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/gui/cursor/cursor_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/gui/cursor/cursor_normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/gui/gui_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/gui/gui_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/gui/gui_atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/gui/gui_atlas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/terrain/tile_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/terrain/tile_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/terrain/tile_atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AsterixLugdunum/assets/textures/terrain/tile_atlas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/fonts/comic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/fonts/comic_strip_mn.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/lang/en.lang" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/lang/fr.lang" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/shaders/cartoon_opening.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/shaders/cartoon_opening.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/shaders/default.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/shaders/default.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/shaders/sprite.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/shaders/sprite.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/sounds/hub.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/sounds/intro.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/sounds/opening_world.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/entity/asterix_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/entity/asterix_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/font/comic_strip_mn_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/font/comic_strip_mn_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/font/obelix_pro_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/font/obelix_pro_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/bd_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/bd_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/cursor/cursor_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/gui_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/gui_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/intro_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/gui/intro_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/terrain/hub_map.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/terrain/hub_map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/terrain/tile_atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGame/assets/textures/terrain/tile_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/shaders/cartoon_opening.frag" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/shaders/transition.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/shaders/cartoon_opening.vert" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/shaders/transition.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/entity/boat_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/entity/boat_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/font/comic_strip_mn_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/font/comic_strip_mn_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/font/obelix_pro_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/font/obelix_pro_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/font/obelix_pro_atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/font/obelix_pro_atlas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/gui/cursor/cursor_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/gui/cursor/cursor_normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/gui/gui_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/gui/gui_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/gui/gui_atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/gui/gui_atlas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/terrain/tile_atlas.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/terrain/tile_atlas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/textures/terrain/tile_atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/textures/terrain/tile_atlas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/AsterixAndObelixGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/AsterixAndObelixGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/audio/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/audio/AudioManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/MeshManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/MeshManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/RenderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/RenderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/RenderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/RenderUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/ShaderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/ShaderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/cursor/CursorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/cursor/CursorManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/RendererRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/RendererRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/TileRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/TileRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/BoatRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/BoatRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/PlayerRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/PlayerRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/SplashParticleRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/particle/SplashParticleRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/HubLevelRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/HubLevelRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/LevelRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/LevelRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/TavernRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/TavernRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionCreditRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionCreditRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionCreditsRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionCreditsRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionGameBrandRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionGameBrandRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionGameTitleRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/introduction/IntroductionGameTitleRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/graphics/texture/TextureManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/graphics/texture/TextureManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Cannonball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/EnumDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/EnumDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/Particle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/SplashParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/SplashParticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubLevelMarkerNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubLevelMarkerNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/tavern/TavernLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/tavern/TavernLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/path/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/path/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/path/PathNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/path/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/path/PathTraveller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/path/PathTraveller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/tile/LilypadTile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/tile/WaterTile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/info/game/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" />
+      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" />
+      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,29 +17,121 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BridgeRenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3294">
-              <caret line="198" column="166" selection-start-line="198" selection-start-column="166" selection-end-line="198" selection-end-column="166" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TavernRenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/TavernRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BridgeLevel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+            <state relative-caret-position="337">
+              <caret line="259" column="17" lean-forward="false" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
+              <folding>
+                <element signature="e#9642#9643#0" expanded="true" />
+                <element signature="e#9683#9684#0" expanded="true" />
+                <element signature="e#9723#9724#0" expanded="true" />
+                <element signature="e#9761#9762#0" expanded="true" />
+                <element signature="e#10229#10230#0" expanded="true" />
+                <element signature="e#10274#10275#0" expanded="true" />
+                <element signature="e#10318#10319#0" expanded="true" />
+                <element signature="e#10364#10365#0" expanded="true" />
+                <element signature="e#10794#10795#0" expanded="true" />
+                <element signature="e#10862#10863#0" expanded="true" />
+                <element signature="e#10896#10897#0" expanded="true" />
+                <element signature="e#10967#10968#0" expanded="true" />
+                <element signature="e#11013#11014#0" expanded="true" />
+                <element signature="e#11047#11048#0" expanded="true" />
+                <element signature="e#11081#11082#0" expanded="true" />
+                <element signature="e#11113#11114#0" expanded="true" />
+                <element signature="e#11153#11154#0" expanded="true" />
+                <element signature="e#11189#11190#0" expanded="true" />
+                <element signature="e#11229#11230#0" expanded="true" />
+                <element signature="e#11264#11265#0" expanded="true" />
+                <element signature="e#11299#11300#0" expanded="true" />
+                <element signature="e#11332#11333#0" expanded="true" />
+                <element signature="e#11369#11370#0" expanded="true" />
+                <element signature="e#11401#11402#0" expanded="true" />
+                <element signature="e#11441#11442#0" expanded="true" />
+                <element signature="e#11472#11473#0" expanded="true" />
+                <element signature="e#11515#11516#0" expanded="true" />
+                <element signature="e#11549#11550#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+              <folding>
+                <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1679#1680#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeleporterTile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/TeleporterTile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplashParticle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/SplashParticle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cannonball.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Cannonball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Boat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsterixAndObelixGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/info/game/AsterixAndObelixGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -239,13 +214,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/TileRenderer.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/tile/MetadataTile.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java" />
-        <option value="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/LevelRenderer.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/particle/SplashParticleRenderer.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/tile/TileRegistry.java" />
@@ -254,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/Player.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/SplashParticle.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/Particle.java" />
-        <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/Cannonball.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/OrbParticle.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/particle/OrbParticleRenderer.java" />
@@ -292,6 +270,8 @@
         <option value="$PROJECT_DIR$/resources/assets/textures/font/obelix_pro_atlas.json" />
         <option value="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/TavernRenderer.java" />
+        <option value="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" />
+        <option value="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" />
         <option value="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" />
       </list>
     </option>
@@ -311,12 +291,21 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,32 +316,6 @@
             <path>
               <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
               <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="textures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="textures" type="462c0819:PsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,111 +323,6 @@
               <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-              <item name="render" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="cursor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="particle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="texture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
@@ -472,173 +330,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="pacman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="particle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="bridge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="campus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="gates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="hub" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-              <item name="credits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-              <item name="tavern" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-              <item name="interpolation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="path" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AsterixLugdunum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AsterixLugdunum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="tile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="TavernRen&#9;PSI&#9;JAVA://fr.info.game.graphics.renderer.level.TavernRenderer&#10;Bridge&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/bridge/BridgeLevel.java&#10;BridgeLe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/bridge/BridgeLevel.java&#10;BridgeRender&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java&#10;BridgeRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java&#10;update&#9;ACTION&#9;Vcs.UpdateProject&#10;spawn&#9;PSI&#9;JAVA://fr.info.game.logic.level.Level#spawnEntity&#10;RenderU&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/RenderUtils.java&#10;BridgeRend&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java&#10;BridgeLeve&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/bridge/BridgeLevel.java&#10;RendererRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/RendererRegistry.java&#10;HubPa&#9;PSI&#9;JAVA://fr.info.game.logic.level.hub.HubPath&#10;PathTrav&#9;PSI&#9;JAVA://fr.info.game.logic.path.PathTraveller&#10;Renderer&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/RendererRegistry.java&#10;Player&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/Player.java&#10;PacmanPla&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/PacmanPlayer.java&#10;EntityRenderer&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java&#10;EntityRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java&#10;Pacman&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/PacmanPlayer.java&#10;Tavern&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/tavern/TavernLevel.java&#10;BoatRende&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/BoatRenderer.java&#10;Boat&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/Boat.java&#10;EntityR&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java&#10;PacmanPl&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/PacmanPlayer.java&#10;EntityIte&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/EntityItem.java&#10;asterix_atlas&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/entity/asterix_atlas.json&#10;taverRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/TavernRenderer.java&#10;ItemRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/ItemRenderer.java&#10;TavernRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/TavernRenderer.java&#10;item_atla&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/item/item_atlas.json&#10;Asterix&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/AsterixAndObelixGame.java&#10;HubLe&#9;PSI&#9;JAVA://fr.info.game.logic.level.hub.HubLevel&#10;pacman_walls&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/maps/pacman_walls0.json&#10;tile_atlas&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/terrain/tile_atlas.json&#10;tile_atl&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/terrain/tile_atlas.png&#10;item_atl&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/item/item_atlas.json&#10;TileRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/tile/TileRegistry.java&#10;loadmap&#9;PSI&#9;JAVA://fr.info.game.utils.FileUtils#loadMap&#10;ItemRend&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/ItemRenderer.java&#10;TileR&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/tile/TileRegistry.java&#10;Texturema&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/texture/TextureManager.java&#10;Taver&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/tavern/TavernLevel.java&#10;Tile&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/tile/TeleporterTile.java&#10;OrbPar&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/particle/OrbParticle.java&#10;Entity&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/Entity.java&#10;TavernLe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/tavern/TavernLevel.java&#10;tile_atlas.json&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/terrain/tile_atlas.json&#10;OrbRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/particle/OrbParticleRenderer.java&#10;particle_atla&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/fx/particles_atlas.json&#10;Splash&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/particle/SplashParticle.java" />
+    <property name="SearchEverywhereHistoryKey" value="BridgeLe&#9;FILE&#9;file://C:/Users/Kaolyfin/Desktop/INSA/Algo/Projet/AsterixLugdunum/src/fr/info/game/logic/level/bridge/BridgeLevel.java&#10;GameLe&#9;FILE&#9;file://C:/Users/Kaolyfin/Desktop/INSA/Algo/Projet/AsterixLugdunum/src/fr/info/game/logic/level/GameLevel.java&#10;tile&#9;FILE&#9;file://C:/Users/Kaolyfin/Desktop/INSA/Algo/Projet/AsterixLugdunum/src/fr/info/game/logic/tile/TileRegistry.java&#10;TavernRen&#9;PSI&#9;JAVA://fr.info.game.graphics.renderer.level.TavernRenderer&#10;Bridge&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/bridge/BridgeLevel.java&#10;BridgeRender&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java&#10;BridgeRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java&#10;update&#9;ACTION&#9;Vcs.UpdateProject&#10;spawn&#9;PSI&#9;JAVA://fr.info.game.logic.level.Level#spawnEntity&#10;RenderU&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/RenderUtils.java&#10;BridgeRend&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java&#10;BridgeLeve&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/bridge/BridgeLevel.java&#10;RendererRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/RendererRegistry.java&#10;HubPa&#9;PSI&#9;JAVA://fr.info.game.logic.level.hub.HubPath&#10;PathTrav&#9;PSI&#9;JAVA://fr.info.game.logic.path.PathTraveller&#10;Renderer&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/RendererRegistry.java&#10;Player&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/Player.java&#10;PacmanPla&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/PacmanPlayer.java&#10;EntityRenderer&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java&#10;EntityRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java&#10;Pacman&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/PacmanPlayer.java&#10;Tavern&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/tavern/TavernLevel.java&#10;BoatRende&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/BoatRenderer.java&#10;Boat&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/Boat.java&#10;EntityR&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java&#10;PacmanPl&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/PacmanPlayer.java&#10;EntityIte&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/EntityItem.java&#10;asterix_atlas&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/entity/asterix_atlas.json&#10;taverRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/TavernRenderer.java&#10;ItemRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/ItemRenderer.java&#10;TavernRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/level/TavernRenderer.java&#10;item_atla&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/item/item_atlas.json&#10;Asterix&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/AsterixAndObelixGame.java&#10;HubLe&#9;PSI&#9;JAVA://fr.info.game.logic.level.hub.HubLevel&#10;pacman_walls&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/maps/pacman_walls0.json&#10;tile_atlas&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/terrain/tile_atlas.json&#10;tile_atl&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/terrain/tile_atlas.png&#10;item_atl&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/item/item_atlas.json&#10;TileRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/tile/TileRegistry.java&#10;loadmap&#9;PSI&#9;JAVA://fr.info.game.utils.FileUtils#loadMap&#10;ItemRend&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/ItemRenderer.java&#10;TileR&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/tile/TileRegistry.java&#10;Texturema&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/texture/TextureManager.java&#10;Taver&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/tavern/TavernLevel.java&#10;Tile&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/tile/TeleporterTile.java&#10;OrbPar&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/particle/OrbParticle.java&#10;Entity&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/entity/Entity.java&#10;TavernLe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/logic/level/tavern/TavernLevel.java&#10;tile_atlas.json&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/resources/assets/textures/terrain/tile_atlas.json&#10;OrbRe&#9;FILE&#9;file://D:/Users/Charles/Programmation/Java/AsterixLugdunum/src/fr/info/game/graphics/renderer/entity/particle/OrbParticleRenderer.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pentago" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -663,15 +376,36 @@
   </component>
   <component name="RunManager">
     <configuration name="AsterixLugdunum" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="fr.info.game.AsterixAndObelixGame" />
-      <module name="AsterixLugdunum" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=libs/natives/windows" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AsterixLugdunum" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -681,13 +415,17 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
+      <envs />
       <patterns />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -700,15 +438,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
+      <envs />
       <properties />
       <listeners />
     </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -770,68 +514,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.22980501" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.2632312" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50201344" side_tool="true" weight="0.33983287" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32729805" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286908" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7688525" visible="true" weight="0.16845638" />
-      <window_info anchor="bottom" id="Statistic" order="12" weight="0.29108635" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.23114754" side_tool="true" weight="0.152349" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798658" weight="0.24233983" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.20194986" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22980501" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2632312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33983287" sideWeight="0.50201344" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262159" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1681081" sideWeight="0.7688525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20166074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.152349" sideWeight="0.23114754" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24966443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24233983" sideWeight="0.49798658" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29108635" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32729805" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.2632312" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7688525" visible="true" weight="0.2295302" />
-      <window_info id="Structure" order="1" sideWeight="0.23114754" side_tool="true" weight="0.152349" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.22980501" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.20194986" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798658" weight="0.16713092" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286908" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50201344" side_tool="true" weight="0.33983287" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -843,107 +558,17 @@
     <breakpoint-manager>
       <option name="time" value="28" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/particle/OrbParticleRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="29" column="119" selection-start-line="29" selection-start-column="119" selection-end-line="29" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/TeleporterTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/texture/TextureManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="58" column="80" lean-forward="true" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/item/MetadataItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/maps/pacman_floor0.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" lean-forward="true" selection-end-line="441" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/TileRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="46" selection-start-line="46" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/item/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/textures/terrain/tile_atlas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/maps/pacman_walls0.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="211" column="21" lean-forward="true" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/hub/HubLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/EnumDirection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/AsterixAndObelixGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="306" column="28" selection-start-line="306" selection-start-column="28" selection-end-line="306" selection-end-column="28" />
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -951,14 +576,14 @@
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/item/ItemRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/textures/item/item_atlas.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -993,70 +618,56 @@
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/ShaderManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/EntityItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/BoatRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/EntityRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-287">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/PacmanPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/PacmanEnemy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/pacman/PacmanEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1072,7 +683,7 @@
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/path/PathTraveller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1086,35 +697,35 @@
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/path/AStar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
-          <caret line="10" column="62" lean-forward="true" selection-start-line="7" selection-end-line="38" selection-end-column="7" />
+          <caret line="10" column="62" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="38" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/path/NodeAStar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/path/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/RendererRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/entity/PlayerRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1128,21 +739,14 @@
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/RenderUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/LevelRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1153,61 +757,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/fr.info.game">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>fr.info.game</OriginalElement>
-          <nodes>
-            <node x="" y="">fr.info.game.lang</node>
-            <node x="" y="">fr.info.game.Display</node>
-            <node x="" y="">fr.info.game.Launcher</node>
-            <node x="" y="">fr.info.game.ScheduledTask</node>
-            <node x="" y="">fr.info.game.audio</node>
-            <node x="" y="">fr.info.game.logic</node>
-            <node x="" y="">fr.info.game.Font</node>
-            <node x="" y="">fr.info.game.AsterixAndObelixGame</node>
-            <node x="" y="">fr.info.game.assets</node>
-            <node x="" y="">fr.info.game.graphics</node>
-            <node x="" y="">fr.info.game.Synchronizer</node>
-            <node x="" y="">fr.info.game.exception</node>
-            <node x="" y="">fr.info.game.utils</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="194.0" y="203.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://JAVA/fr.info.game" />
     <entry file="file://$PROJECT_DIR$/resources/assets/textures/font/comic_strip_mn_atlas.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4644">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3294">
-          <caret line="198" column="166" selection-start-line="198" selection-start-column="166" selection-end-line="198" selection-end-column="166" />
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/TavernRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <caret line="34" column="59" lean-forward="false" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Cannonball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/particle/SplashParticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/AsterixAndObelixGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="113" column="31" lean-forward="true" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/input/KeyboardCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/sources/lwjgl-glfw-sources.jar!/org/lwjgl/glfw/GLFW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="123" column="37" lean-forward="true" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/ScheduledTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="e#796#797#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20459">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="178" column="78" lean-forward="true" selection-start-line="178" selection-start-column="78" selection-end-line="178" selection-end-column="78" />
+          <folding>
+            <element signature="e#6252#6253#0" expanded="false" />
+            <element signature="e#6320#6321#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/TileRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/TeleporterTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+        <state relative-caret-position="337">
+          <caret line="259" column="17" lean-forward="false" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
+          <folding>
+            <element signature="e#9642#9643#0" expanded="true" />
+            <element signature="e#9683#9684#0" expanded="true" />
+            <element signature="e#9723#9724#0" expanded="true" />
+            <element signature="e#9761#9762#0" expanded="true" />
+            <element signature="e#10229#10230#0" expanded="true" />
+            <element signature="e#10274#10275#0" expanded="true" />
+            <element signature="e#10318#10319#0" expanded="true" />
+            <element signature="e#10364#10365#0" expanded="true" />
+            <element signature="e#10794#10795#0" expanded="true" />
+            <element signature="e#10862#10863#0" expanded="true" />
+            <element signature="e#10896#10897#0" expanded="true" />
+            <element signature="e#10967#10968#0" expanded="true" />
+            <element signature="e#11013#11014#0" expanded="true" />
+            <element signature="e#11047#11048#0" expanded="true" />
+            <element signature="e#11081#11082#0" expanded="true" />
+            <element signature="e#11113#11114#0" expanded="true" />
+            <element signature="e#11153#11154#0" expanded="true" />
+            <element signature="e#11189#11190#0" expanded="true" />
+            <element signature="e#11229#11230#0" expanded="true" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11299#11300#0" expanded="true" />
+            <element signature="e#11332#11333#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11401#11402#0" expanded="true" />
+            <element signature="e#11441#11442#0" expanded="true" />
+            <element signature="e#11472#11473#0" expanded="true" />
+            <element signature="e#11515#11516#0" expanded="true" />
+            <element signature="e#11549#11550#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
