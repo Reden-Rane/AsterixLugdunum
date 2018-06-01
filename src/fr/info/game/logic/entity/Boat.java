@@ -18,6 +18,9 @@ public class Boat extends Entity {
         this.boatAABB = new AxisAlignedBoundingBox(0, 0, 7.5F, 1.5625F);
     }
 
+    /**
+     * applique une pénalité sur la vitesse du bateau quand celui ci est touché
+     */
     public void hit() {
         if(level != null) {
             lastHitTime = level.getLevelTicks();
