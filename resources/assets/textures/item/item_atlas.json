@@ -1,0 +1,36 @@
+{
+  "name": "item_atlas",
+  "texture_path": "item/item_atlas.png",
+  "min_filter": 9728,
+  "mag_filter": 9728,
+  "sprites": [
+    {
+      "name": "bottle0",
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "bottle1",
+      "x": 0,
+      "y": 32,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "barrel",
+      "x": 32,
+      "y": 0,
+      "width": 32,
+      "height": 48
+    },
+    {
+      "name": "keys",
+      "x": 0,
+      "y": 64,
+      "width": 32,
+      "height": 32
+    }
+  ]
+}

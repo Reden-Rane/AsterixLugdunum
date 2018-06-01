@@ -1,7 +1,7 @@
 package fr.info.game.logic.level.hub;
 
 import fr.info.game.logic.path.Path;
-import fr.info.game.logic.path.PathNode;
+import fr.info.game.logic.path.Node;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class HubPath extends Path {
     private final List<HubLevelMarkerNode> levelMarkers = new ArrayList<>();
 
     @Override
-    public void appendNode(PathNode node) {
+    public void appendNode(Node node) {
         super.appendNode(node);
         if (node instanceof HubLevelMarkerNode) {
             levelMarkers.add((HubLevelMarkerNode) node);
@@ -19,7 +19,7 @@ public class HubPath extends Path {
     }
 
     @Override
-    public void prependNode(PathNode node) {
+    public void prependNode(Node node) {
         super.prependNode(node);
         if (node instanceof HubLevelMarkerNode) {
             levelMarkers.add(0, (HubLevelMarkerNode) node);

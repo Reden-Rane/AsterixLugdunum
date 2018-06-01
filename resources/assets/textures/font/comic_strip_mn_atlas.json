@@ -1,8 +1,8 @@
 {
 	"name": "comic_strip_mn_atlas",
 	"texture_path": "font/comic_strip_mn_atlas.png",
-	"min_filter": 9729, //GL_LINEAR
-	"mag_filter": 9729, //GL_LINEAR
+	"min_filter": 9728, //GL_NEAREST
+	"mag_filter": 9728, //GL_NEAREST
 	"sprites": [
 		{
 			"name": "32",

@@ -28,8 +28,9 @@ public class PlayerRenderer extends EntityRenderer<Player> {
         if (player.isJumping()) {
             animation = getJumpRightAnimation(player);
             return animation.getFrameAt(JUMP_TICKS_DURATION - player.getJumpCounter());
-        } else if (player.getMotionX() != 0 || player.getMotionY() != 0) {
+        } else if (player.motionX != 0 || player.motionY != 0) {
             animation = getWalkAnimation(player);
+            return animation.getFrameAt(player.getExistingTicks() % animation.duration);
         } else {
             animation = getIdleAnimation(player);
         }

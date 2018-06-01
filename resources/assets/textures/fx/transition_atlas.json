@@ -1,0 +1,50 @@
+{
+  "name": "transition_atlas",
+  "texture_path": "fx/transition_atlas.png",
+  "min_filter": 9729,
+  "mag_filter": 9729,
+  "sprites": [
+    {
+      "name": "opening",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "cartoonCircle",
+      "x": 1920,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "bands",
+      "x": 0,
+      "y": 1080,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "spiral",
+      "x": 1920,
+      "y": 1080,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "pokeball",
+      "x": 0,
+      "y": 2160,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "fight",
+      "x": 1920,
+      "y": 2160,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

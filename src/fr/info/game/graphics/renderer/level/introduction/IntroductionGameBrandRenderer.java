@@ -27,9 +27,4 @@ public class IntroductionGameBrandRenderer extends Renderer<IntroductionGameBran
         RenderUtils.renderTextureSprite(gameBrand.gameBrandSprite, x, y, 0, w, h, new Vector4f(1, 1, 1, alpha));
         AsterixAndObelixGame.INSTANCE.getRenderManager().shaderManager.spriteShader.unbind();
     }
-
-    @Override
-    public boolean shouldRender(IntroductionGameBrand obj, float partialTicks) {
-        return true;
-    }
 }

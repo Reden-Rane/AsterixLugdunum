@@ -4,12 +4,15 @@ public class Player extends Entity {
 
     public static final int JUMP_TICKS_DURATION = 10;
 
-    private EnumDirection direction;
     private int jumpCounter;
     private boolean isJumping;
 
     public Player() {
-        super(0, 0, 32, 64);
+        super(0, 0, 1, 2);
+    }
+
+    public Player(float width, float height) {
+        super(0, 0, width, height);
     }
 
     @Override
@@ -26,23 +29,12 @@ public class Player extends Entity {
         super.update();
     }
 
-    @Override
-    public void setMotionX(float motionX) {
-        super.setMotionX(motionX);
-
-        if(getMotionX() < 0) {
-            setDirection(EnumDirection.LEFT);
-        } else {
-            setDirection(EnumDirection.RIGHT);
-        }
-    }
-
-    public void setDirection(EnumDirection direction) {
-        this.direction = direction;
-    }
-
     public EnumDirection getDirection() {
-        return direction;
+        if(motionX < 0) {
+            return EnumDirection.LEFT;
+        } else {
+            return EnumDirection.RIGHT;
+        }
     }
 
     public void jump() {

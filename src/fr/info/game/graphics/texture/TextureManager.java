@@ -31,9 +31,16 @@ public class TextureManager {
 
     public final TextureAtlas skyParallaxAtlas;
 
+    public final TextureAtlas itemAtlas;
+
+    public final TextureAtlas particlesAtlas;
+    public final TextureAtlas transitionAtlas;
+
     private Texture boundTexture;
 
     public TextureManager() throws IOException, TextureLoadingException {
+        System.out.println("Loading textures...");
+
         GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.registerTypeAdapter(TextureAtlas.class, new TextureAtlasDeserializer());
         this.gson = gsonBuilder.create();
@@ -48,6 +55,11 @@ public class TextureManager {
         this.hubMapAtlas = loadAtlas(new TextureResource("terrain/hub_map.json"));
         this.tileAtlas = loadAtlas(new TextureResource("terrain/tile_atlas.json"));
         this.skyParallaxAtlas = loadAtlas(new TextureResource("terrain/sky_parallax_atlas.json"));
+
+        this.itemAtlas = loadAtlas(new TextureResource("item/item_atlas.json"));
+
+        this.particlesAtlas = loadAtlas(new TextureResource("fx/particles_atlas.json"));
+        this.transitionAtlas = loadAtlas(new TextureResource("fx/transition_atlas.json"));
     }
 
     public TextureAtlas loadAtlas(TextureResource textureResource) throws TextureLoadingException, IOException {

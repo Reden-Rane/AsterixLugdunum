@@ -50,8 +50,6 @@ public class AudioManager {
 
         loadSounds();
         this.musicSource = new SoundSource();
-
-        System.out.println("Initialized sound system.");
     }
 
     public void setListenerData(Vector3f listenerPos, Vector3f listenerVelocity) {
@@ -63,6 +61,7 @@ public class AudioManager {
         loadSound("intro", new SoundResource("intro.wav"));
         loadSound("hub", new SoundResource("hub.wav"));
         loadSound("opening_world", new SoundResource("opening_world.wav"));
+        loadSound("water_rowing", new SoundResource("water_rowing.wav"));
     }
 
     private void loadSound(String name, SoundResource soundResource) throws IOException, UnsupportedAudioFileException {

@@ -22,9 +22,4 @@ public class IntroductionCreditRenderer extends Renderer<IntroductionCredit> {
         RenderUtils.renderString(credit.getText(), renderManager.COMIC_STRIP_MN_FONT, textX, textY, credit.getTextSize(), new Vector4f(1, 1, 1, alpha));
         renderManager.shaderManager.spriteShader.unbind();
     }
-
-    @Override
-    public boolean shouldRender(IntroductionCredit obj, float partialTicks) {
-        return true;
-    }
 }

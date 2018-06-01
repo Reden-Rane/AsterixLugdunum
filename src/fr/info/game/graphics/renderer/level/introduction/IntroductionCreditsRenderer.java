@@ -20,9 +20,4 @@ public class IntroductionCreditsRenderer extends Renderer<IntroductionCredits> {
             renderer.render(credit, partialTicks);
         }
     }
-
-    @Override
-    public boolean shouldRender(IntroductionCredits obj, float partialTicks) {
-        return true;
-    }
 }

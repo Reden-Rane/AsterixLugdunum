@@ -10,11 +10,11 @@ public class SplashParticle extends Particle {
         super(x, y, lifetime);
     }
 
-    public SplashParticle(float x, float y, int width, int height, long lifetime) {
+    public SplashParticle(float x, float y, float width, float height, long lifetime) {
         super(x, y, width, height, lifetime);
     }
 
-    public SplashParticle(float x, float y, float z, int width, int height, long lifetime) {
+    public SplashParticle(float x, float y, float z, float width, float height, long lifetime) {
         super(x, y, z, width, height, lifetime);
     }
 }

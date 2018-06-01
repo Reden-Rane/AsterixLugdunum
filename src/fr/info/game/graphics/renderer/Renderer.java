@@ -10,8 +10,10 @@ public abstract class Renderer<T> {
 		this.renderManager = renderManager;
 	}
 
-	public abstract void render(T obj, float partialTicks);
+    public void render(T obj, float partialTicks) {
+	    this.renderAt(obj, 0, 0, 0, partialTicks);
+    }
 
-	public abstract boolean shouldRender(T obj, float partialTicks);
+	public void renderAt(T obj, float x, float y, float z, float partialTicks) {}
 
 }

@@ -1,25 +1,27 @@
 package fr.info.game.logic.entity;
 
 import fr.info.game.logic.AxisAlignedBoundingBox;
+import fr.info.game.logic.level.Level;
 
 public abstract class Entity {
 
-    private final AxisAlignedBoundingBox defaultAABB;
+    private AxisAlignedBoundingBox collisionBox;
+
+    public Level level;
 
     private long existingTicks;
     private float prevX;
     private float prevY;
     private float prevZ;
-    private float x;
-    private float y;
-    private float z;
-    private float motionX;
-    private float motionY;
-    private float motionZ;
-    private int width;
-    private int height;
+    public float x;
+    public float y;
+    public float z;
+    public float motionX;
+    public float motionY;
+    public float width;
+    public float height;
 
-    private boolean isDead;
+    public boolean isDead;
 
     public Entity() {
         this(0, 0);
@@ -29,11 +31,11 @@ public abstract class Entity {
         this(x, y, 1, 1);
     }
 
-    public Entity(float x, float y, int width, int height) {
+    public Entity(float x, float y, float width, float height) {
         this(x, y, 0, width, height);
     }
 
-    public Entity(float x, float y, float z, int width, int height) {
+    public Entity(float x, float y, float z, float width, float height) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -42,28 +44,36 @@ public abstract class Entity {
         this.prevZ = z;
         this.width = width;
         this.height = height;
-        this.defaultAABB = new AxisAlignedBoundingBox(0, 0, width, height);
+        this.collisionBox = new AxisAlignedBoundingBox(0, 0, width, height);
     }
 
     public void update() {
-        this.prevX = this.getX();
-        this.prevY = this.getY();
-        this.prevZ = this.getZ();
-        this.setX(getX() + getMotionX());
-        this.setY(getY() + getMotionY());
+        this.prevX = this.x;
+        this.prevY = this.y;
+        this.prevZ = this.z;
+        updateEntityPosition();
         this.existingTicks++;
     }
 
+    protected void updateEntityPosition() {
+        this.x += this.motionX;
+        this.y += this.motionY;
+    }
+
     public boolean collidesWith(Entity entity) {
-        boolean flag1 = entity.getX() + entity.getCollisionBox().x < this.getX() + this.getCollisionBox().x + this.getCollisionBox().width;
-        boolean flag2 = entity.getX() + entity.getCollisionBox().x + entity.getCollisionBox().width > this.getX() + this.getCollisionBox().x;
-        boolean flag3 = entity.getY() + entity.getCollisionBox().y < this.getY() + this.getCollisionBox().y + this.getCollisionBox().height;
-        boolean flag4 = entity.getY() + entity.getCollisionBox().y + entity.getCollisionBox().height > this.getY() + this.getCollisionBox().y;
+        boolean flag1 = entity.x + entity.getCollisionBox().x < this.x + this.getCollisionBox().x + this.getCollisionBox().width;
+        boolean flag2 = entity.x + entity.getCollisionBox().x + entity.getCollisionBox().width > this.x + this.getCollisionBox().x;
+        boolean flag3 = entity.y + entity.getCollisionBox().y < this.y + this.getCollisionBox().y + this.getCollisionBox().height;
+        boolean flag4 = entity.y + entity.getCollisionBox().y + entity.getCollisionBox().height > this.y + this.getCollisionBox().y;
         return flag1 && flag2 && flag3 && flag4;
     }
 
     public AxisAlignedBoundingBox getCollisionBox() {
-        return defaultAABB;
+        return collisionBox;
+    }
+
+    public void setCollisionBox(AxisAlignedBoundingBox collisionBox) {
+        this.collisionBox = collisionBox;
     }
 
     public long getExistingTicks() {
@@ -71,11 +81,11 @@ public abstract class Entity {
     }
 
     public void moveToX(float x) {
-        this.setMotionX(x - getX());
+        this.motionX = x - this.x;
     }
 
     public void moveToY(float y) {
-        this.setMotionY(y - getY());
+        this.motionY = y - this.y;
     }
 
     public void moveTo(float x, float y) {
@@ -83,60 +93,11 @@ public abstract class Entity {
         moveToY(y);
     }
 
-    public boolean isDead() {
-        return isDead;
-    }
-
-    public void setDead() {
-        isDead = true;
-    }
-
-    public float getMotionX() {
-        return motionX;
-    }
-
-    public void setMotionX(float motionX) {
-        this.motionX = motionX;
-    }
-
-    public float getMotionY() {
-        return motionY;
-    }
-
-    public void setMotionY(float motionY) {
-        this.motionY = motionY;
-    }
-
-    public float getMotionZ() {
-        return motionZ;
-    }
-
-    public void setMotionZ(float motionZ) {
-        this.motionZ = motionZ;
-    }
-
-    public float getX() {
-        return x;
-    }
-
-    public void setX(float x) {
+    public void teleportTo(float x, float y) {
         this.x = x;
-    }
-
-    public float getY() {
-        return y;
-    }
-
-    public void setY(float y) {
         this.y = y;
-    }
-
-    public float getZ() {
-        return z;
-    }
-
-    public void setZ(float z) {
-        this.z = z;
+        this.prevX = x;
+        this.prevY = y;
     }
 
     public float getPrevX() {
@@ -149,21 +110,5 @@ public abstract class Entity {
 
     public float getPrevZ() {
         return prevZ;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 }

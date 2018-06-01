@@ -11,6 +11,8 @@ public class MeshManager {
     public final VertexArray texturedRectangle;
 
     public MeshManager() {
+        System.out.println("Loading meshes...");
+
         this.rectangle = loadMesh(new float[]{0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0}, new byte[]{0, 1, 2, 2, 3, 0});
         this.texturedRectangle = loadMesh(new float[]{0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0}, new byte[]{0, 1, 2, 2, 3, 0}, new float[]{0, 0, 1, 0, 1, 1, 0, 1});
     }

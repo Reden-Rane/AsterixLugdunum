@@ -19,7 +19,7 @@ public abstract class Level {
 
     private final Camera camera = new Camera();
 
-    private final SoundSource sfxSource = new SoundSource();
+    protected final SoundSource sfxSource = new SoundSource();
 
     private LinearInterpolation cartoonCircleAnimation;
     protected float cartoonCircleRadius;
@@ -33,6 +33,7 @@ public abstract class Level {
     }
 
     public void update() {
+
         this.prevCartoonCircleRadius = this.cartoonCircleRadius;
         if (this.cartoonCircleAnimation != null) {
             this.cartoonCircleAnimation.update();
@@ -42,7 +43,7 @@ public abstract class Level {
         Iterator<Entity> iterator = getLoadedEntities().iterator();
         while (iterator.hasNext()) {
             Entity entity = iterator.next();
-            if(entity.isDead()) {
+            if(entity.isDead) {
                 iterator.remove();
             } else {
                 entity.update();
@@ -92,6 +93,7 @@ public abstract class Level {
 
     public void spawnEntity(Entity entity) {
         loadedEntities.add(entity);
+        entity.level = this;
     }
 
     public List<Entity> getLoadedEntities() {
@@ -110,5 +112,9 @@ public abstract class Level {
         return null;
     }
 
-    public void resetLevel() {}
+    public void resetLevel() {
+        for(Entity entity : loadedEntities) {
+            entity.isDead = true;
+        }
+    }
 }

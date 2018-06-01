@@ -27,11 +27,11 @@ public class RenderManager {
     public final RendererRegistry rendererRegistry = new RendererRegistry(this);
 
     public final Font COMIC_STRIP_MN_FONT = new Font(this, new TextureResource("font/comic_strip_mn_atlas.json"), 64);
+    public final Font OBELIX_PRO_FONT = new Font(this, new TextureResource("font/obelix_pro_atlas.json"), 64);
 
     public RenderManager() throws IOException, TextureLoadingException {
         RenderMatrices.init(this);
         this.cursorManager.normalCursor.use();
-        System.out.println("Initialized graphics manager.");
     }
 
     public void render(Level level, float partialTicks) {

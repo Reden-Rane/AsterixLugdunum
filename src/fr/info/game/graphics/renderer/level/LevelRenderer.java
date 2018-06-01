@@ -23,26 +23,30 @@ public abstract class LevelRenderer<L extends Level> extends Renderer<L> {
     @Override
     public void render(L level, float partialTicks) {
         updateView(level, partialTicks);
+        RenderMatrices.setMatrixMode(RenderMatrices.EnumMatrixMode.MODEL);
         renderTerrain(level, partialTicks);
         renderEntities(level, partialTicks);
+        renderHud(level, partialTicks);
         renderCartoonCircle(level, partialTicks);
     }
 
+    protected void renderHud(L level, float partialTicks) {}
+
     protected void renderTerrain(L level, float partialTicks) {
-        RenderMatrices.setMatrixMode(RenderMatrices.EnumMatrixMode.MODEL);
+        renderTiles(level, level.getTerrain(), partialTicks);
+    }
 
-        Tile[][] terrain = level.getTerrain();
-
-        if(terrain != null) {
-            for (int x = 0; x < terrain.length; x++) {
-                if(terrain[x] != null) {
-                    for (int y = 0; y < terrain[x].length; y++) {
-                        Tile tile = terrain[x][y];
+    protected void renderTiles(Level level, Tile[][] tiles, float partialTicks) {
+        if(tiles != null) {
+            for (int x = 0; x < tiles.length; x++) {
+                if(tiles[x] != null) {
+                    for (int y = 0; y < tiles[x].length; y++) {
+                        Tile tile = tiles[x][y];
                         if (tile != null) {
-                            TileRenderer tileRenderer = (TileRenderer) renderManager.rendererRegistry.getRenderer(terrain[x][y]);
+                            TileRenderer tileRenderer = (TileRenderer) renderManager.rendererRegistry.getRenderer(tiles[x][y]);
 
-                            if(tileRenderer.shouldRender(tile, partialTicks)) {
-                                tileRenderer.render(tile, partialTicks);
+                            if(tileRenderer.shouldRender(tile, level, x * Tile.TILE_SIZE, y * Tile.TILE_SIZE, partialTicks)) {
+                                tileRenderer.renderAt(tile, x * Tile.TILE_SIZE, y * Tile.TILE_SIZE, 0, partialTicks);
                             }
                         }
                     }
@@ -53,7 +57,7 @@ public abstract class LevelRenderer<L extends Level> extends Renderer<L> {
 
     protected void renderCartoonCircle(L level, float partialTicks) {
         float cartoonCircleRadius = MathUtils.lerp(level.getPrevCartoonCircleRadius(), level.getCartoonCircleRadius(), partialTicks);
-        RenderUtils.renderCartoonCircle(cartoonCircleRadius);
+        RenderUtils.renderCartoonCircleTransition(cartoonCircleRadius);
     }
 
     protected void renderEntities(L level, float partialTicks) {
@@ -61,28 +65,36 @@ public abstract class LevelRenderer<L extends Level> extends Renderer<L> {
 
         for (Entity entity : level.getLoadedEntities()) {
             EntityRenderer<Entity> entityRenderer = (EntityRenderer<Entity>) renderManager.rendererRegistry.getRenderer(entity);
-            if(entityRenderer.shouldRender(entity, partialTicks)) {
-                entityRenderer.render(entity, partialTicks);
+            if(entityRenderer != null && entityRenderer.shouldRender(entity, partialTicks)) {
+                float x = entityRenderer.getRenderX(entity, partialTicks);
+                float y = entityRenderer.getRenderY(entity, partialTicks);
+                float z = entityRenderer.getRenderZ(entity, partialTicks);
+                entityRenderer.renderAt(entity, x, y, z, partialTicks);
             }
         }
     }
 
     protected void updateView(L level, float partialTicks) {
         Camera camera = level.getCamera();
-        float cameraOffsetX = MathUtils.lerp(camera.getPrevOffsetX(), camera.getOffsetX(), partialTicks);
-        float cameraOffsetY = MathUtils.lerp(camera.getPrevOffsetY(), camera.getOffsetY(), partialTicks);
+        float cameraOffsetX = MathUtils.lerp(camera.getPrevOffsetX(), camera.getOffsetX(), partialTicks) * Tile.TILE_SIZE;
+        float cameraOffsetY = MathUtils.lerp(camera.getPrevOffsetY(), camera.getOffsetY(), partialTicks) * Tile.TILE_SIZE;
         float cameraZoom = MathUtils.lerp(camera.getPrevZoom(), camera.getZoom(), partialTicks);
 
         RenderMatrices.pushMatrix(VIEW);
         RenderMatrices.setMatrixMode(VIEW);
         RenderMatrices.scale(cameraZoom, cameraZoom, cameraZoom);
+
+        double p = 50;
+        /*
+        We ceil the camera offset to avoid texture glitches due to float precision
+
+        On arrondi à l'excès le décalage de la caméra pour éviter les glitchs de textures dûs à la précision des flottants
+         */
+        cameraOffsetX = (float) (Math.ceil(cameraOffsetX *  p) / p);
+        cameraOffsetY = (float) (Math.ceil(cameraOffsetY * p) / p);
+
         RenderMatrices.translate(cameraOffsetX, cameraOffsetY, 0);
         renderManager.shaderManager.updateViewMatrixUniform();
         RenderMatrices.popMatrix(VIEW);
-    }
-
-    @Override
-    public boolean shouldRender(L obj, float partialTicks) {
-        return true;
     }
 }

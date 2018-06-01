@@ -12,6 +12,14 @@ import static org.lwjgl.opengl.GL13.glActiveTexture;
 
 public class RenderUtils {
 
+    public static String formatMilliseconds(long milliseconds) {
+        float minutes = milliseconds / (60 * 1000F);
+        float seconds = (minutes - (int) minutes) * 60;
+        float ms = (seconds - (int) seconds) * 1000;
+        // ()int) minutes + ":" + (int) seconds + ":" + (int) (ms / 10F) * 10
+        return String.format("%02d:%02d:%03d", (int) minutes, (int) seconds, (int) ms);
+    }
+
     public static void renderTextureSprite(TextureSprite sprite, float x, float y, float z, float width, float height) {
         renderTextureSprite(sprite, x, y, z, width, height, new Vector4f(1, 1, 1, 1));
     }
@@ -19,7 +27,7 @@ public class RenderUtils {
     public static void renderTextureSprite(TextureSprite sprite, float x, float y, float z, float width, float height, Vector4f colorTint) {
         ShaderProgram shader = AsterixAndObelixGame.INSTANCE.getRenderManager().shaderManager.getBoundShaderProgram();
 
-        if(shader == null) {
+        if (shader == null) {
             throw new IllegalStateException("No shader is bound.");
         }
 
@@ -56,9 +64,9 @@ public class RenderUtils {
     }
 
     public static void renderString(String str, Font font, int x, int y, float pt, Vector4f color) {
-        for(char c : str.toCharArray()) {
+        for (char c : str.toCharArray()) {
             TextureSprite glyph = font.getCharSprite(c);
-            if(glyph != null) {
+            if (glyph != null) {
                 float ptRatio = pt / font.getFontSize();
                 renderTextureSprite(glyph, x, y, 0, glyph.width * ptRatio, glyph.height * ptRatio, color);
                 x += glyph.width * ptRatio;
@@ -66,22 +74,37 @@ public class RenderUtils {
         }
     }
 
-    public static void renderCartoonCircle(float progress) {
+    public static void renderCartoonCircleTransition(float progress) {
+        renderTransition("cartoonCircle", progress);
+    }
+
+    public static void renderSpiralTransition(float progress) {
+        renderTransition("spiral", progress);
+    }
+
+    public static void renderFightTransition(float progress) {
+        renderTransition("fight", progress);
+    }
+
+    public static void renderTransition(String name, float progress) {
         RenderManager renderManager = AsterixAndObelixGame.INSTANCE.getRenderManager();
-        renderManager.shaderManager.cartoonOpeningShader.bind();
-        renderManager.shaderManager.cartoonOpeningShader.setUniformMat4f("projectionMatrix", new Matrix4f().ortho(0, renderManager.getDisplayWidth(), 0, renderManager.getDisplayHeight(), -1, 3000));
-        renderManager.shaderManager.cartoonOpeningShader.setUniform2f("circleCenter", renderManager.getDisplayWidth() / 2, renderManager.getDisplayHeight() / 2);
-        renderManager.shaderManager.cartoonOpeningShader.setUniform1f("circleRadius", Math.max(renderManager.getDisplayWidth(), renderManager.getDisplayHeight()) * 2 * progress);
-        RenderUtils.renderRectangle(0, 0, 0, renderManager.getDisplayWidth(), renderManager.getDisplayHeight(), new Vector4f(0, 0, 0, 1));
-        renderManager.shaderManager.cartoonOpeningShader.unbind();
+        renderManager.shaderManager.transitionShader.bind();
+        renderManager.shaderManager.transitionShader.setUniform1f("progress", 1 - progress);
+        renderManager.shaderManager.transitionShader.setUniformMat4f("viewMatrix", new Matrix4f());
+        renderManager.shaderManager.transitionShader.setUniformMat4f("projectionMatrix", new Matrix4f().ortho(0, 1920, 0, 1013, 0, 3000));
+        TextureSprite transitionTextureMap = renderManager.textureManager.transitionAtlas.getTextureSprite(name);
+        if (transitionTextureMap != null) {
+            RenderUtils.renderTextureSprite(transitionTextureMap, 0, 0, 0, renderManager.getDisplayWidth(), renderManager.getDisplayHeight());
+        }
+        renderManager.shaderManager.transitionShader.unbind();
     }
 
     public static int getStringWidth(String text, Font font, int textSize) {
         int width = 0;
 
-        for(char c : text.toCharArray()) {
+        for (char c : text.toCharArray()) {
             TextureSprite glyph = font.getCharSprite(c);
-            if(glyph != null) {
+            if (glyph != null) {
                 float ptRatio = textSize / font.getFontSize();
                 width += glyph.width * ptRatio;
             }

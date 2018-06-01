@@ -22,11 +22,11 @@ public abstract class GameLevel extends Level {
     public void update() {
 
         if (KeyboardCallback.isKeyDown(GLFW_KEY_ESCAPE)) {
-            AsterixAndObelixGame.INSTANCE.addScheduledTask(new ScheduledTask(0, 20) {
+            AsterixAndObelixGame.INSTANCE.addScheduledTask(new ScheduledTask(0, 15) {
                 @Override
                 protected void updateTask() {
                     if (getTicks() == 0) {
-                        closeLevel(20);
+                        closeLevel(15);
                     }
                 }
 
@@ -37,7 +37,19 @@ public abstract class GameLevel extends Level {
             });
         }
 
+        updateTiles(this.tiles);
+
         super.update();
+    }
+
+    public void updateTiles(Tile[][] tiles) {
+        for(int i = 0; i < tiles.length; i++) {
+            for(int j = 0; j < tiles[i].length; j++) {
+                if(tiles[i][j] != null) {
+                    tiles[i][j].update(this, i, j);
+                }
+            }
+        }
     }
 
     public Tile[][] getTerrain() {

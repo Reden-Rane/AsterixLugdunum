@@ -1,15 +1,13 @@
 package fr.info.game.graphics.renderer;
 
 import fr.info.game.graphics.RenderManager;
-import fr.info.game.graphics.renderer.entity.BoatRenderer;
-import fr.info.game.graphics.renderer.entity.CannonballRenderer;
-import fr.info.game.graphics.renderer.entity.PlayerRenderer;
-import fr.info.game.graphics.renderer.entity.SplashParticleRenderer;
+import fr.info.game.graphics.renderer.entity.*;
+import fr.info.game.graphics.renderer.entity.particle.OrbParticleRenderer;
+import fr.info.game.graphics.renderer.entity.particle.SplashParticleRenderer;
 import fr.info.game.graphics.renderer.level.*;
 import fr.info.game.graphics.renderer.level.introduction.*;
-import fr.info.game.logic.entity.Boat;
-import fr.info.game.logic.entity.Cannonball;
-import fr.info.game.logic.entity.Player;
+import fr.info.game.logic.entity.*;
+import fr.info.game.logic.entity.particle.OrbParticle;
 import fr.info.game.logic.entity.particle.SplashParticle;
 import fr.info.game.logic.level.bridge.BridgeLevel;
 import fr.info.game.logic.level.campus.CampusLevel;
@@ -31,7 +29,9 @@ public class RendererRegistry {
     private final HashMap<Class, Renderer> renderersRegistry = new HashMap<>();
 
     public RendererRegistry(RenderManager renderManager) {
+        renderersRegistry.put(Entity.class, new EntityRenderer(renderManager));
         renderersRegistry.put(Player.class, new PlayerRenderer(renderManager));
+//        renderersRegistry.put(PacmanPlayer.class, new PacmanRenderer(renderManager));
         renderersRegistry.put(HubLevel.class, new HubLevelRenderer(renderManager));
 
         renderersRegistry.put(IntroductionLevel.class, new IntroductionLevelRenderer(renderManager));
@@ -49,7 +49,10 @@ public class RendererRegistry {
         renderersRegistry.put(Boat.class, new BoatRenderer(renderManager));
         renderersRegistry.put(Cannonball.class, new CannonballRenderer(renderManager));
 
+        renderersRegistry.put(EntityItem.class, new ItemRenderer(renderManager));
+
         renderersRegistry.put(SplashParticle.class, new SplashParticleRenderer(renderManager));
+        renderersRegistry.put(OrbParticle.class, new OrbParticleRenderer(renderManager));
 
         renderersRegistry.put(Tile.class, new TileRenderer(renderManager));
     }

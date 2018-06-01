@@ -6,16 +6,17 @@ public class Tile {
 
     public static final int TILE_SIZE = 32;
 
-    public final Level level;
-    public final float x;
-    public final float y;
-    public final String tileSpriteName;
+    private final String textureName;
 
-    public Tile(Level level, String tileSpriteName, float x, float y) {
-        this.level = level;
-        this.tileSpriteName = tileSpriteName;
-        this.x = x;
-        this.y = y;
+    Tile(String textureName) {
+        this.textureName = textureName;
+        TileRegistry.registeredTiles.add(this);
     }
+
+    public String getTextureName() {
+        return textureName;
+    }
+
+    public void update(Level level, int x, int y) {}
 
 }

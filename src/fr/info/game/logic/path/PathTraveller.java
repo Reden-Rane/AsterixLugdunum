@@ -44,11 +44,11 @@ public class PathTraveller {
         }
     }
 
-    public PathNode getStartNode() {
+    public Node getStartNode() {
         return this.path.getPathNode(0);
     }
 
-    public PathNode getEndNode() {
+    public Node getEndNode() {
         return this.path.getPathNode(this.path.getNodesCount() - 1);
     }
 

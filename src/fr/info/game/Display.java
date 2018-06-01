@@ -1,9 +1,15 @@
 package fr.info.game;
 
+import fr.info.game.assets.TextureResource;
 import fr.info.game.exception.GameException;
 import fr.info.game.graphics.cursor.Cursor;
+import fr.info.game.graphics.texture.Texture;
+import org.lwjgl.glfw.GLFW;
+import org.lwjgl.glfw.GLFWImage;
 import org.lwjgl.glfw.GLFWWindowSizeCallbackI;
 import org.lwjgl.opengl.GL;
+
+import java.nio.ByteBuffer;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
@@ -32,10 +38,20 @@ public class Display implements GLFWWindowSizeCallbackI {
 
         glfwSetWindowSizeCallback(windowID, this);
         glfwMakeContextCurrent(windowID);
-        glfwShowWindow(windowID);
-        GL.createCapabilities();
 
-        System.out.println("Initialized display.");
+        GL.createCapabilities();
+        loadWindowIcon(new Texture(new TextureResource("gui/window/window_icon64x64.png")));
+    }
+
+    public void show() {
+        glfwShowWindow(windowID);
+    }
+
+    private void loadWindowIcon(Texture texture) {
+        GLFWImage.Buffer icons = GLFWImage.malloc(1);
+        icons.position(0).width(texture.getWidth()).height(texture.getHeight()).pixels(texture.getImageData());
+        glfwSetWindowIcon(windowID, icons);
+        icons.free();
     }
 
     public void destroy() {

@@ -7,32 +7,32 @@ import java.util.List;
 
 public class Path {
 
-    private final List<PathNode> pathNodes = new ArrayList<>();
+    private final List<Node> nodes = new ArrayList<>();
     private double pathLength;
 
-    public void appendNode(PathNode node) {
-        this.pathNodes.add(node);
+    public void appendNode(Node node) {
+        this.nodes.add(node);
         this.pathLength = computePathLength();
     }
 
-    public void prependNode(PathNode node) {
-        this.pathNodes.add(0, node);
+    public void prependNode(Node node) {
+        this.nodes.add(0, node);
         this.pathLength = computePathLength();
     }
 
-    public PathNode getPathNode(int nodeIndex) {
+    public Node getPathNode(int nodeIndex) {
         if (nodeIndex < 0) {
             nodeIndex = 0;
-        } else if (nodeIndex >= pathNodes.size()) {
-            nodeIndex = pathNodes.size() - 1;
+        } else if (nodeIndex >= nodes.size()) {
+            nodeIndex = nodes.size() - 1;
         }
-        return pathNodes.get(nodeIndex);
+        return nodes.get(nodeIndex);
     }
 
     private double computePathLength() {
         double l = 0;
-        for (int i = 1; i < pathNodes.size(); i++) {
-            l += pathNodes.get(i - 1).distanceTo(pathNodes.get(i));
+        for (int i = 1; i < nodes.size(); i++) {
+            l += nodes.get(i - 1).distanceTo(nodes.get(i));
         }
         return l;
     }
@@ -40,20 +40,20 @@ public class Path {
     public Vector2f getPositionAtLength(double length) {
         double l = 0;
 
-        for (int i = 1; i < pathNodes.size(); i++) {
-            double segmentLength = pathNodes.get(i - 1).distanceTo(pathNodes.get(i));
+        for (int i = 1; i < nodes.size(); i++) {
+            double segmentLength = nodes.get(i - 1).distanceTo(nodes.get(i));
 
             if (l + segmentLength >= length) {
                 float p = (float) ((length - l) / segmentLength);
-                float x = pathNodes.get(i - 1).x * (1 - p) + pathNodes.get(i).x * p;
-                float y = pathNodes.get(i - 1).y * (1 - p) + pathNodes.get(i).y * p;
+                float x = nodes.get(i - 1).x * (1 - p) + nodes.get(i).x * p;
+                float y = nodes.get(i - 1).y * (1 - p) + nodes.get(i).y * p;
                 return new Vector2f(x, y);
             } else {
                 l += segmentLength;
             }
         }
 
-        return new Vector2f(pathNodes.get(pathNodes.size() - 1).x, pathNodes.get(pathNodes.size() - 1).y);
+        return new Vector2f(nodes.get(nodes.size() - 1).x, nodes.get(nodes.size() - 1).y);
     }
 
     public double getPathLength() {
@@ -64,23 +64,23 @@ public class Path {
         return getPositionAtLength(getPathLength() * progress);
     }
 
-    public Path subPath(PathNode from, PathNode to) {
-        return subPath(this.pathNodes.indexOf(from), this.pathNodes.indexOf(to));
+    public Path subPath(Node from, Node to) {
+        return subPath(this.nodes.indexOf(from), this.nodes.indexOf(to));
     }
 
     public Path subPath(int from, int to) {
         Path subPath = new Path();
         for (int i = Math.min(from, to); i <= Math.max(from, to); i++) {
             if(from < to) {
-                subPath.appendNode(this.pathNodes.get(i));
+                subPath.appendNode(this.nodes.get(i));
             } else {
-                subPath.prependNode(this.pathNodes.get(i));
+                subPath.prependNode(this.nodes.get(i));
             }
         }
         return subPath;
     }
 
     public int getNodesCount() {
-        return this.pathNodes.size();
+        return this.nodes.size();
     }
 }

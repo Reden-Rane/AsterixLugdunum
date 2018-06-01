@@ -14,6 +14,13 @@
       "height": 195
     },
     {
+      "name": "boatFull",
+      "x": 0,
+      "y": 209,
+      "width": 240,
+      "height": 195
+    },
+    {
       "name": "paddle",
       "x": 266,
       "y": 11,

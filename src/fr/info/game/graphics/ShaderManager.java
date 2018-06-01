@@ -11,15 +11,19 @@ public class ShaderManager {
 
     public final ShaderProgram defaultShader;
     public final ShaderProgram spriteShader;
-    public final ShaderProgram cartoonOpeningShader;
     public final ShaderProgram hudShader;
+
+    public final ShaderProgram transitionShader;
+
     private ShaderProgram boundShaderProgram;
 
     public ShaderManager() {
+        System.out.println("Loading shaders...");
+
         this.defaultShader = loadShader("default.vert", "default.frag");
         this.spriteShader = loadShader("sprite.vert", "sprite.frag");
-        this.cartoonOpeningShader = loadShader("cartoon_opening.vert", "cartoon_opening.frag");
         this.hudShader = loadShader("hud.vert", "hud.frag");
+        this.transitionShader = loadShader("transition.vert", "transition.frag");
     }
 
     public ShaderProgram loadShader(String vertex, String fragment) {
@@ -37,6 +41,7 @@ public class ShaderManager {
     public void updateTextureUnitUniform() {
         this.spriteShader.setUniform1i("tex", 0);
         this.hudShader.setUniform1i("tex", 0);
+        this.transitionShader.setUniform1i("tex", 0);
     }
 
     public void updateProjectionMatrixUniform() {
