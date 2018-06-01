@@ -134,7 +134,7 @@ public class BridgeLevel extends GameLevel {
         super.update();
         updateCannonballs();
 
-        /**
+        /*
          * fait apparaître aléatoirement des boulets de cannon en fonction de leur période d'apparition
          */
         if(!isLevelFinished() && hasLevelStarted()) {
@@ -257,7 +257,7 @@ public class BridgeLevel extends GameLevel {
         super.keyEvent(key, action);
 
         /*
-        démarre l
+        démarre le jeu dans un niveau, après pression sur la touche ENTREE
          */
         if(!levelStarted) {
             if(KeyboardCallback.isKeyDown(GLFW_KEY_ENTER)) {
@@ -269,13 +269,22 @@ public class BridgeLevel extends GameLevel {
 
         if(!isLevelFinished() && hasLevelStarted()) {
 
+
             List<Integer> pressedKeys = KeyboardCallback.getPressedKeys();
 
-            if (getKeyToPress() != -1) {
+            /*
+            touche à appuyer
+             */
+            int keyToPress = getKeyToPress();
+
+            if (!keySequence.isEmpty()) {
+                /*
+                seulement quand une touche est appuyée
+                 */
                 if (pressedKeys.size() >= 1) {
-
-                    int keyToPress = getKeyToPress();
-
+                    /*
+                    seulement si une seule touche est appuyée et si celle ci correspond à la touche demandée
+                     */
                     if (pressedKeys.size() == 1 && KeyboardCallback.isKeyJustPressed(keyToPress)) {
                         this.wasLastKeyValid = true;
                         this.validKeysCounter++;
@@ -337,10 +346,18 @@ public class BridgeLevel extends GameLevel {
         return MathUtils.clamp((playerBoat.x - INITIAL_PLAYER_X) / (float) LEVEL_FINISH_LINE_DISTANCE, 0, 1);
     }
 
+    /**
+     * retourne la durée de la course
+     * @return
+     */
     public long getDuration() {
         return System.currentTimeMillis() - startTime - 3000;
     }
 
+    /**
+     * retourne la prochaine touche à appuyer
+     * @return
+     */
     public int getKeyToPress() {
         return keySequence.size() > 0 ? keySequence.get(0) : -1;
     }
@@ -365,14 +382,26 @@ public class BridgeLevel extends GameLevel {
         return finishTime;
     }
 
+    /**
+     * vrai si un nouveau record est atteint
+     * @return
+     */
     public boolean hasNewRecord() {
         return newRecord;
     }
 
+    /**
+     * enregistre le meilleur temps
+     * @return
+     */
     public static long getBestTime() {
         return bestTime;
     }
 
+    /**
+     * juste pour la première course
+     * @return
+     */
     public static boolean hasBestTime() {
         return hasBestTime;
     }

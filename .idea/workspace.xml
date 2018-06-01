@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5868330-f7e7-45a4-8ac3-61ac515e3a5b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java" />
       <change beforePath="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" afterPath="$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,59 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BridgeLevel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="259" column="17" lean-forward="false" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
-              <folding>
-                <element signature="e#9642#9643#0" expanded="true" />
-                <element signature="e#9683#9684#0" expanded="true" />
-                <element signature="e#9723#9724#0" expanded="true" />
-                <element signature="e#9761#9762#0" expanded="true" />
-                <element signature="e#10229#10230#0" expanded="true" />
-                <element signature="e#10274#10275#0" expanded="true" />
-                <element signature="e#10318#10319#0" expanded="true" />
-                <element signature="e#10364#10365#0" expanded="true" />
-                <element signature="e#10794#10795#0" expanded="true" />
-                <element signature="e#10862#10863#0" expanded="true" />
-                <element signature="e#10896#10897#0" expanded="true" />
-                <element signature="e#10967#10968#0" expanded="true" />
-                <element signature="e#11013#11014#0" expanded="true" />
-                <element signature="e#11047#11048#0" expanded="true" />
-                <element signature="e#11081#11082#0" expanded="true" />
-                <element signature="e#11113#11114#0" expanded="true" />
-                <element signature="e#11153#11154#0" expanded="true" />
-                <element signature="e#11189#11190#0" expanded="true" />
-                <element signature="e#11229#11230#0" expanded="true" />
-                <element signature="e#11264#11265#0" expanded="true" />
-                <element signature="e#11299#11300#0" expanded="true" />
-                <element signature="e#11332#11333#0" expanded="true" />
-                <element signature="e#11369#11370#0" expanded="true" />
-                <element signature="e#11401#11402#0" expanded="true" />
-                <element signature="e#11441#11442#0" expanded="true" />
-                <element signature="e#11472#11473#0" expanded="true" />
-                <element signature="e#11515#11516#0" expanded="true" />
-                <element signature="e#11549#11550#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-              <folding>
-                <element signature="e#1651#1652#0" expanded="true" />
-                <element signature="e#1679#1680#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -515,7 +460,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22980501" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -531,7 +475,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1681081" sideWeight="0.7688525" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20166074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20166074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.152349" sideWeight="0.23114754" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24966443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -565,13 +509,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/EnumDirection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Desktop/jeu_info_julie/copiercoller.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/item/ItemRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -805,14 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/input/KeyboardCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/sources/lwjgl-glfw-sources.jar!/org/lwjgl/glfw/GLFW.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -829,14 +758,6 @@
             <element signature="e#796#797#0" expanded="false" />
             <element signature="e#824#825#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/Level.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-459">
@@ -899,17 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="e#1651#1652#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/entity/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -925,40 +827,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/input/KeyboardCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="599" column="6" lean-forward="false" selection-start-line="599" selection-start-column="6" selection-end-line="599" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/graphics/renderer/level/BridgeRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/bridge/BridgeLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="259" column="17" lean-forward="false" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
+        <state relative-caret-position="7128">
+          <caret line="279" column="0" lean-forward="false" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
           <folding>
-            <element signature="e#9642#9643#0" expanded="true" />
-            <element signature="e#9683#9684#0" expanded="true" />
-            <element signature="e#9723#9724#0" expanded="true" />
-            <element signature="e#9761#9762#0" expanded="true" />
-            <element signature="e#10229#10230#0" expanded="true" />
-            <element signature="e#10274#10275#0" expanded="true" />
-            <element signature="e#10318#10319#0" expanded="true" />
-            <element signature="e#10364#10365#0" expanded="true" />
-            <element signature="e#10794#10795#0" expanded="true" />
-            <element signature="e#10862#10863#0" expanded="true" />
-            <element signature="e#10896#10897#0" expanded="true" />
-            <element signature="e#10967#10968#0" expanded="true" />
-            <element signature="e#11013#11014#0" expanded="true" />
-            <element signature="e#11047#11048#0" expanded="true" />
-            <element signature="e#11081#11082#0" expanded="true" />
-            <element signature="e#11113#11114#0" expanded="true" />
-            <element signature="e#11153#11154#0" expanded="true" />
-            <element signature="e#11189#11190#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
-            <element signature="e#11264#11265#0" expanded="true" />
-            <element signature="e#11299#11300#0" expanded="true" />
-            <element signature="e#11332#11333#0" expanded="true" />
-            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#10001#10002#0" expanded="true" />
+            <element signature="e#10042#10043#0" expanded="true" />
+            <element signature="e#10082#10083#0" expanded="true" />
+            <element signature="e#10120#10121#0" expanded="true" />
+            <element signature="e#10588#10589#0" expanded="true" />
+            <element signature="e#10633#10634#0" expanded="true" />
+            <element signature="e#10677#10678#0" expanded="true" />
+            <element signature="e#10723#10724#0" expanded="true" />
+            <element signature="e#11222#11223#0" expanded="true" />
+            <element signature="e#11290#11291#0" expanded="true" />
             <element signature="e#11401#11402#0" expanded="true" />
-            <element signature="e#11441#11442#0" expanded="true" />
             <element signature="e#11472#11473#0" expanded="true" />
-            <element signature="e#11515#11516#0" expanded="true" />
-            <element signature="e#11549#11550#0" expanded="true" />
+            <element signature="e#11518#11519#0" expanded="true" />
+            <element signature="e#11552#11553#0" expanded="true" />
+            <element signature="e#11586#11587#0" expanded="true" />
+            <element signature="e#11618#11619#0" expanded="true" />
+            <element signature="e#11658#11659#0" expanded="true" />
+            <element signature="e#11694#11695#0" expanded="true" />
+            <element signature="e#11734#11735#0" expanded="true" />
+            <element signature="e#11769#11770#0" expanded="true" />
+            <element signature="e#11804#11805#0" expanded="true" />
+            <element signature="e#11837#11838#0" expanded="true" />
+            <element signature="e#11950#11951#0" expanded="true" />
+            <element signature="e#11982#11983#0" expanded="true" />
+            <element signature="e#12089#12090#0" expanded="true" />
+            <element signature="e#12120#12121#0" expanded="true" />
+            <element signature="e#12231#12232#0" expanded="true" />
+            <element signature="e#12265#12266#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/level/GameLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/info/game/logic/tile/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
