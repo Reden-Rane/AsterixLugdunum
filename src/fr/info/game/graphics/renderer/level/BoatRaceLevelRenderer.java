@@ -3,7 +3,7 @@ package fr.info.game.graphics.renderer.level;
 import fr.info.game.graphics.RenderManager;
 import fr.info.game.graphics.RenderUtils;
 import fr.info.game.graphics.texture.TextureSprite;
-import fr.info.game.logic.level.bridge.BridgeLevel;
+import fr.info.game.logic.level.bridge.BoatRaceLevel;
 import fr.info.game.logic.math.MathUtils;
 import fr.info.game.logic.tile.Tile;
 import org.joml.Matrix4f;
@@ -15,14 +15,14 @@ import static fr.info.game.logic.tile.Tile.TILE_SIZE;
 import static org.lwjgl.glfw.GLFW.glfwGetKeyName;
 import static org.lwjgl.opengl.GL11.*;
 
-public class BridgeRenderer extends LevelRenderer<BridgeLevel> {
+public class BoatRaceLevelRenderer extends LevelRenderer<BoatRaceLevel> {
 
-    public BridgeRenderer(RenderManager renderManager) {
+    public BoatRaceLevelRenderer(RenderManager renderManager) {
         super(renderManager);
     }
 
     @Override
-    protected void renderTerrain(BridgeLevel level, float partialTicks) {
+    protected void renderTerrain(BoatRaceLevel level, float partialTicks) {
 
         super.renderTerrain(level, partialTicks);
 
@@ -66,14 +66,14 @@ public class BridgeRenderer extends LevelRenderer<BridgeLevel> {
     }
 
     @Override
-    public void render(BridgeLevel level, float partialTicks) {
+    public void render(BoatRaceLevel level, float partialTicks) {
         glClearColor(0.5F, 0.8F, 1F, 1);
         glClear(GL_COLOR_BUFFER_BIT);
         super.render(level, partialTicks);
     }
 
     @Override
-    protected void renderHud(BridgeLevel level, float partialTicks) {
+    protected void renderHud(BoatRaceLevel level, float partialTicks) {
         super.renderHud(level, partialTicks);
 
         renderManager.shaderManager.hudShader.bind();
@@ -130,7 +130,7 @@ public class BridgeRenderer extends LevelRenderer<BridgeLevel> {
         renderManager.shaderManager.hudShader.unbind();
     }
 
-    private void renderKeySequence(BridgeLevel level) {
+    private void renderKeySequence(BoatRaceLevel level) {
         TextureSprite keyButtonSprite = renderManager.textureManager.guiAtlas.getTextureSprite("keyButton");
 
         for(int i = 0; i < level.getKeySequence().size(); i++) {
@@ -188,7 +188,7 @@ public class BridgeRenderer extends LevelRenderer<BridgeLevel> {
         }
     }
 
-    private void renderTimer(BridgeLevel level) {
+    private void renderTimer(BoatRaceLevel level) {
         long duration = level.getDuration();
 
         if (level.isLevelFinished()) {
@@ -199,13 +199,13 @@ public class BridgeRenderer extends LevelRenderer<BridgeLevel> {
         RenderUtils.renderString(timerString, renderManager.COMIC_STRIP_MN_FONT, 34, renderManager.getDisplayHeight() - 44, 60, new Vector4f(151 / 255F, 131 / 255F, 83 / 255F, 1));
         RenderUtils.renderString(timerString, renderManager.COMIC_STRIP_MN_FONT, 30, renderManager.getDisplayHeight() - 40, 60, new Vector4f(211 / 255F, 191 / 255F, 143 / 255F, 1));
 
-        if(BridgeLevel.hasBestTime()) {
-            String bestTimeString = RenderUtils.formatMilliseconds(BridgeLevel.getBestTime());
+        if(BoatRaceLevel.hasBestTime()) {
+            String bestTimeString = RenderUtils.formatMilliseconds(BoatRaceLevel.getBestTime());
             RenderUtils.renderString(bestTimeString, renderManager.COMIC_STRIP_MN_FONT, 30, renderManager.getDisplayHeight() - 80, 30, new Vector4f(1, 1, 1, 1));
         }
     }
 
-    private void renderProgressBar(BridgeLevel level) {
+    private void renderProgressBar(BoatRaceLevel level) {
         TextureSprite progressLeftSprite = renderManager.textureManager.guiAtlas.getTextureSprite("progressLeft");
         TextureSprite progressMiddleSprite = renderManager.textureManager.guiAtlas.getTextureSprite("progressMiddle");
         TextureSprite progressRightSprite = renderManager.textureManager.guiAtlas.getTextureSprite("progressRight");

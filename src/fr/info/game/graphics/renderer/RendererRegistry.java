@@ -9,7 +9,8 @@ import fr.info.game.graphics.renderer.level.introduction.*;
 import fr.info.game.logic.entity.*;
 import fr.info.game.logic.entity.particle.OrbParticle;
 import fr.info.game.logic.entity.particle.SplashParticle;
-import fr.info.game.logic.level.bridge.BridgeLevel;
+import fr.info.game.logic.level.bridge.BoatRaceLevel;
+import fr.info.game.logic.level.bridge.CannonballLevel;
 import fr.info.game.logic.level.campus.CampusLevel;
 import fr.info.game.logic.level.gates.GatesLevel;
 import fr.info.game.logic.level.hub.HubLevel;
@@ -41,10 +42,11 @@ public class RendererRegistry {
         renderersRegistry.put(IntroductionCreditDev.class, new IntroductionCreditDevRenderer(renderManager));
         renderersRegistry.put(IntroductionGameTitle.class, new IntroductionGameTitleRenderer(renderManager));
 
-        renderersRegistry.put(TavernLevel.class, new TavernRenderer(renderManager));
-        renderersRegistry.put(BridgeLevel.class, new BridgeRenderer(renderManager));
-        renderersRegistry.put(GatesLevel.class, new GatesRenderer(renderManager));
-        renderersRegistry.put(CampusLevel.class, new CampusRenderer(renderManager));
+        renderersRegistry.put(TavernLevel.class, new TavernLevelRenderer(renderManager));
+        renderersRegistry.put(BoatRaceLevel.class, new BoatRaceLevelRenderer(renderManager));
+        renderersRegistry.put(GatesLevel.class, new GatesLevelRenderer(renderManager));
+        renderersRegistry.put(CampusLevel.class, new CampusLevelRenderer(renderManager));
+        renderersRegistry.put(CannonballLevel.class, new CannonballLevelRenderer(renderManager));
 
         renderersRegistry.put(Boat.class, new BoatRenderer(renderManager));
         renderersRegistry.put(Cannonball.class, new CannonballRenderer(renderManager));

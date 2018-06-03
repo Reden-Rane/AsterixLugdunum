@@ -5,9 +5,9 @@ import fr.info.game.logic.level.gates.GatesLevel;
 
 import static org.lwjgl.opengl.GL11.*;
 
-public class GatesRenderer extends LevelRenderer<GatesLevel> {
+public class GatesLevelRenderer extends LevelRenderer<GatesLevel> {
 
-    public GatesRenderer(RenderManager renderManager) {
+    public GatesLevelRenderer(RenderManager renderManager) {
         super(renderManager);
     }
 

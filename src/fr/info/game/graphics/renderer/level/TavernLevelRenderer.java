@@ -11,9 +11,9 @@ import static fr.info.game.AsterixAndObelixGame.RESOLUTION_X;
 import static fr.info.game.AsterixAndObelixGame.RESOLUTION_Y;
 import static org.lwjgl.opengl.GL11.*;
 
-public class TavernRenderer extends LevelRenderer<TavernLevel> {
+public class TavernLevelRenderer extends LevelRenderer<TavernLevel> {
 
-    public TavernRenderer(RenderManager renderManager) {
+    public TavernLevelRenderer(RenderManager renderManager) {
         super(renderManager);
     }
 

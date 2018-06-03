@@ -1,6 +1,7 @@
 package fr.info.game.logic.level.bridge;
 
 import fr.info.game.AsterixAndObelixGame;
+import fr.info.game.ScheduledTask;
 import fr.info.game.audio.Sound;
 import fr.info.game.logic.entity.Boat;
 import fr.info.game.logic.entity.Cannonball;
@@ -18,7 +19,7 @@ import java.util.List;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ENTER;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE;
 
-public class BridgeLevel extends GameLevel {
+public class BoatRaceLevel extends GameLevel {
 
     private static final float WATER_RESISTANCE = 0.005F;
     private static final float INITIAL_PLAYER_X = 12;
@@ -49,7 +50,7 @@ public class BridgeLevel extends GameLevel {
     private boolean levelFinished;
     private boolean newRecord;
 
-    public BridgeLevel() {
+    public BoatRaceLevel() {
         super("Le pont");
         this.getCamera().setZoom(2);
         this.resetLevel();
@@ -90,7 +91,7 @@ public class BridgeLevel extends GameLevel {
         this.cannonballList.clear();
         this.playerBoat = new Boat();
         this.spawnEntity(playerBoat);
-        this.generateRandomKeySequence(4, new int[] {81, 87, 69, 82});
+        this.generateRandomKeySequence(4, new int[]{81, 87, 69, 82});
         this.playerBoat.motionX = 0;
         this.playerBoat.paddleRotationMotion = 0;
         this.playerBoat.paddleRotation = 0;
@@ -106,7 +107,7 @@ public class BridgeLevel extends GameLevel {
         super.update();
         updateCannonballs();
 
-        if(!isLevelFinished() && hasLevelStarted()) {
+        if (!isLevelFinished() && hasLevelStarted() && System.currentTimeMillis() - startTime >= 3000) {
             if (System.currentTimeMillis() - lastCannonballSpawnTime >= CANNONBALL_SPAWN_PERIOD) {
                 randomlyShootCannonball();
             }
@@ -116,17 +117,32 @@ public class BridgeLevel extends GameLevel {
         updateCamera();
         handleKeySequence();
 
-        if(getPlayerProgress() >= 1 && !isLevelFinished()) {
+        if (getPlayerProgress() >= 1 && !isLevelFinished()) {
             this.finishTime = System.currentTimeMillis();
             this.levelFinished = true;
 
+            Sound finishSFX = AsterixAndObelixGame.INSTANCE.getAudioManager().getSound("finish");
+            sfxSource.stop();
+            sfxSource.play(finishSFX);
+
             long time = finishTime - startTime - 3000;
 
-            if(time < bestTime) {
+            if (time < bestTime) {
                 bestTime = time;
                 newRecord = true;
 
-                if(!hasBestTime) {
+                Sound newRecordSFX = AsterixAndObelixGame.INSTANCE.getAudioManager().getSound("new_record");
+                AsterixAndObelixGame.INSTANCE.addScheduledTask(new ScheduledTask(22, 1) {
+                    @Override
+                    protected void updateTask() {
+                        if(getTicks() == 0) {
+                            sfxSource.stop();
+                            sfxSource.play(newRecordSFX);
+                        }
+                    }
+                });
+
+                if (!hasBestTime) {
                     hasBestTime = true;
                 }
             }
@@ -151,7 +167,7 @@ public class BridgeLevel extends GameLevel {
 
             playerBoat.motionX = playerBoat.motionX + 0.03125F * ratio;
             playerBoat.paddleRotationMotion = 0.5F * ratio;
-            generateRandomKeySequence(4, new int[] {81, 87, 69, 82});
+            generateRandomKeySequence(4, new int[]{81, 87, 69, 82});
         }
     }
 
@@ -204,15 +220,21 @@ public class BridgeLevel extends GameLevel {
             return;//The escape key must only be used to go back to the hub
         }
 
-        if(!levelStarted) {
-            if(KeyboardCallback.isKeyDown(GLFW_KEY_ENTER)) {
+        if (KeyboardCallback.isKeyDown(GLFW_KEY_ENTER)) {
+            if (!hasLevelStarted()) {
+                Sound countdownSFX = AsterixAndObelixGame.INSTANCE.getAudioManager().getSound("countdown");
+                sfxSource.stop();
+                sfxSource.play(countdownSFX);
                 this.startTime = System.currentTimeMillis();
                 levelStarted = true;
+                return;
+            } else if (isLevelFinished()) {
+                this.resetLevel();
                 return;
             }
         }
 
-        if(!isLevelFinished() && hasLevelStarted()) {
+        if (!isLevelFinished() && hasLevelStarted() && System.currentTimeMillis() - startTime >= 3000) {
 
             List<Integer> pressedKeys = KeyboardCallback.getPressedKeys();
 
@@ -248,7 +270,7 @@ public class BridgeLevel extends GameLevel {
     private void generateRandomKeySequence(int sequenceSize, int[] keys) {
         keySequence.clear();
 
-        for(int i = 0; i < sequenceSize; i++) {
+        for (int i = 0; i < sequenceSize; i++) {
             keySequence.add(keys[(int) (Math.random() * keys.length)]);
         }
 
@@ -282,7 +304,7 @@ public class BridgeLevel extends GameLevel {
         return keySequence.size() > 0 ? keySequence.get(0) : -1;
     }
 
-    public  List<Integer> getKeySequence() {
+    public List<Integer> getKeySequence() {
         return keySequence;
     }
 

@@ -5,9 +5,9 @@ import fr.info.game.logic.level.campus.CampusLevel;
 
 import static org.lwjgl.opengl.GL11.*;
 
-public class CampusRenderer extends LevelRenderer<CampusLevel> {
+public class CampusLevelRenderer extends LevelRenderer<CampusLevel> {
 
-    public CampusRenderer(RenderManager renderManager) {
+    public CampusLevelRenderer(RenderManager renderManager) {
         super(renderManager);
     }
 

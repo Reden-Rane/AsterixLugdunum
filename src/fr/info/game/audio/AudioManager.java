@@ -62,6 +62,11 @@ public class AudioManager {
         loadSound("hub", new SoundResource("hub.wav"));
         loadSound("opening_world", new SoundResource("opening_world.wav"));
         loadSound("water_rowing", new SoundResource("water_rowing.wav"));
+        loadSound("error", new SoundResource("error.wav"));
+        loadSound("countdown", new SoundResource("countdown.wav"));
+        loadSound("start", new SoundResource("start.wav"));
+        loadSound("finish", new SoundResource("finish.wav"));
+        loadSound("new_record", new SoundResource("new_record.wav"));
     }
 
     private void loadSound(String name, SoundResource soundResource) throws IOException, UnsupportedAudioFileException {
