@@ -149,8 +149,8 @@ public class BoatRaceLevel extends GameLevel {
         }
 
         applyWaterResistance();
-        updateCamera();
         handleKeySequence();
+        updateCamera();
 
         if (getPlayerProgress() >= 1 && !isLevelFinished()) {
             this.finishTime = System.currentTimeMillis();
