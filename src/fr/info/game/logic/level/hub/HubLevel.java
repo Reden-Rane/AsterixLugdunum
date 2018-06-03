@@ -6,7 +6,7 @@ import fr.info.game.audio.Sound;
 import fr.info.game.logic.entity.Player;
 import fr.info.game.logic.input.KeyboardCallback;
 import fr.info.game.logic.level.Level;
-import fr.info.game.logic.level.bridge.BridgeLevel;
+import fr.info.game.logic.level.bridge.BoatRaceLevel;
 import fr.info.game.logic.level.campus.CampusLevel;
 import fr.info.game.logic.level.gates.GatesLevel;
 import fr.info.game.logic.level.tavern.TavernLevel;
@@ -26,7 +26,7 @@ public class HubLevel extends Level {
     private PathTraveller pathTraveller;
 
     private final HubLevelMarkerNode tavernMarker;
-    private final HubLevelMarkerNode bridgeMarker;
+    private final HubLevelMarkerNode boatRaceMarker;
     private final HubLevelMarkerNode gatesMarker;
     private final HubLevelMarkerNode campusMarker;
 
@@ -40,7 +40,7 @@ public class HubLevel extends Level {
         hubPath.appendNode(new Node(5, 2.34F));
         hubPath.appendNode(new Node(6.25F, 1.56F));
         hubPath.appendNode(new Node(8, 2.34F));
-        hubPath.appendNode(this.bridgeMarker = new HubLevelMarkerNode(new BridgeLevel(), 9.75F, 1.5F));
+        hubPath.appendNode(this.boatRaceMarker = new HubLevelMarkerNode(new BoatRaceLevel(), 9.75F, 1.5F));
         hubPath.appendNode(new Node(11.6F, 0.53F));
         hubPath.appendNode(new Node(12.8F, 0.91F));
         hubPath.appendNode(new Node(12.84F, 2.1F));
@@ -49,10 +49,10 @@ public class HubLevel extends Level {
         hubPath.appendNode(this.gatesMarker = new HubLevelMarkerNode(new GatesLevel(), 12.66F, 4.69F));
         hubPath.appendNode(this.campusMarker = new HubLevelMarkerNode(new CampusLevel(), 12.66F, 7.81F));
 
-        this.currentNode = this.tavernMarker;
+        this.currentNode = this.boatRaceMarker;
 
-        player.x = this.tavernMarker.x;
-        player.y = this.tavernMarker.y;
+        player.x = this.boatRaceMarker.x;
+        player.y = this.boatRaceMarker.y;
         spawnEntity(player);
     }
 
@@ -77,7 +77,16 @@ public class HubLevel extends Level {
                 this.currentNode = (HubLevelMarkerNode) pathTraveller.getEndNode();
                 pathTraveller = null;
             }
-        } else {
+        }
+
+        super.update();
+    }
+
+    @Override
+    public void keyEvent(int key, int action) {
+        super.keyEvent(key, action);
+
+        if(pathTraveller == null) {
             if (KeyboardCallback.isKeyDown(GLFW_KEY_D)) {
 
                 HubLevelMarkerNode nextNode = hubPath.getNextLevelMarker(this.currentNode);
@@ -93,11 +102,14 @@ public class HubLevel extends Level {
                     pathTraveller = new HubPathTraveller(player, this, getCurrentNode(), prevNode, 0.07F);
                 }
             } else if (KeyboardCallback.isKeyDown(GLFW_KEY_ENTER)) {
-                enterLevel(getCurrentNode().level);
+                if (getCurrentNode().level instanceof BoatRaceLevel) {
+                    enterLevel(getCurrentNode().level);
+                } else {
+                    Sound errorSFX = AsterixAndObelixGame.INSTANCE.getAudioManager().getSound("error");
+                    sfxSource.play(errorSFX);
+                }
             }
         }
-
-        super.update();
     }
 
     public void startPlayingHubMusic() {

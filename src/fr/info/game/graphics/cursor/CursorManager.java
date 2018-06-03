@@ -15,7 +15,7 @@ public class CursorManager {
     public CursorManager() {
         System.out.println("Loading cursors...");
 
-        this.normalCursor = loadCursor("gui/cursor/cursor_normal.png", 44, 0);
+        this.normalCursor = loadCursor("gui/cursor/cursor_normal.png", 11, 0);
     }
 
     private Cursor loadCursor(String path, int xHot, int yHot) {

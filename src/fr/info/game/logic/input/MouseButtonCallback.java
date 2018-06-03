@@ -10,17 +10,17 @@ public class MouseButtonCallback extends GLFWMouseButtonCallback {
 
     @Override
     public void invoke(long window, int button, int action, int mods) {
-        if (button > 0 && button < pressedButtons.length) {
+        if (button >= 0 && button < pressedButtons.length) {
             pressedButtons[button] = action != GLFW.GLFW_RELEASE;
             buttonActions[button] = action;
         }
     }
 
-    public boolean isButtonPressed(int button) {
+    public static boolean isButtonPressed(int button) {
         return pressedButtons[button];
     }
 
-    public int getButtonAction(int button) {
+    public static int getButtonAction(int button) {
         return buttonActions[button];
     }
 
