@@ -3,7 +3,7 @@ package fr.info.game.graphics.renderer.level;
 import fr.info.game.graphics.RenderManager;
 import fr.info.game.graphics.RenderUtils;
 import fr.info.game.graphics.texture.TextureSprite;
-import fr.info.game.logic.level.bridge.BoatRaceLevel;
+import fr.info.game.logic.level.boatrace.BoatRaceLevel;
 import fr.info.game.logic.math.MathUtils;
 import fr.info.game.logic.tile.Tile;
 import org.joml.Matrix4f;

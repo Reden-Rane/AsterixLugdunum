@@ -6,7 +6,7 @@ import fr.info.game.audio.Sound;
 import fr.info.game.logic.entity.Player;
 import fr.info.game.logic.input.KeyboardCallback;
 import fr.info.game.logic.level.Level;
-import fr.info.game.logic.level.bridge.BoatRaceLevel;
+import fr.info.game.logic.level.boatrace.BoatRaceLevel;
 import fr.info.game.logic.level.campus.CampusLevel;
 import fr.info.game.logic.level.gates.GatesLevel;
 import fr.info.game.logic.level.tavern.TavernLevel;

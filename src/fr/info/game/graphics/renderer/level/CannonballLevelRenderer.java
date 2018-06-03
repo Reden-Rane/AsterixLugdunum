@@ -3,7 +3,7 @@ package fr.info.game.graphics.renderer.level;
 import fr.info.game.graphics.RenderManager;
 import fr.info.game.graphics.RenderUtils;
 import fr.info.game.logic.input.MousePositionCallback;
-import fr.info.game.logic.level.bridge.CannonballLevel;
+import fr.info.game.logic.level.boatrace.CannonballLevel;
 import org.joml.Vector4f;
 import org.lwjgl.opengl.GL11;
 
